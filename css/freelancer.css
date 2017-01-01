@@ -114,34 +114,14 @@ hr.star:after {
 header {
     text-align: center;
     color: #fff;
-    background: #418689 url("../img/header.jpg") no-repeat center bottom;
+    background: #418689 url("../img/header.jpg") no-repeat center top;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 header .container {
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-header img {
-    display: block;
-    margin: 0 auto 20px;
-}
-
-header .intro-text {
-}
-
-header .intro-text .name {
-    display: block;
-    font-size: 1em;
-    font-weight: 700;
-}
-
-header .intro-text .skills {
-    font-size: 1.25em;
-    font-weight: 300;
-    background-color: #88B04B;
-    padding: 10px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 @media (min-width: 768px) {
@@ -150,13 +130,6 @@ header .intro-text .skills {
         padding-bottom: 400px;
     }
 
-    header .intro-text .name {
-        font-size: 4.75em;
-    }
-
-    header .intro-text .skills {
-        font-size: 1.75em;
-    }
 }
 
 @media (min-width: 768px) {
