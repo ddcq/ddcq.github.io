@@ -1,3 +1,4 @@
+
 function initRadar(){
     var radar = Snap("#radar");
     var radarMask = Snap("#mask");
@@ -8,7 +9,7 @@ function initRadar(){
     var p = radar.path("M10-5-10,15M15,0,0,15M0-5-20,15").attr({
         fill: "none",
         stroke: "#FFC575",
-        strokeWidth: 5
+        strokeWidth: 2
     });
 
     p = p.pattern(0, 0, 10, 10);
@@ -21,7 +22,7 @@ function initRadar(){
         mask: radarMask2
     });
 
-    radarMask.attr({fill: "r(0.5, 0.65, 0.6)#FFC575-#fff"});
+    radarMask.attr({fill: "r(0.5, 0.65, 0.6)#88B04B-#fff"});
 
     var radarGroup = radar.group(radarMask, radarLines, radarDots);
 
