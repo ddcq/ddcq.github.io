@@ -161,11 +161,13 @@
     <div class="container" id="accordion">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2>Mon vécu</h2>
-                <hr class="star">
+                <a data-toggle="collapse" href="#collapseVecu" class="collapsed">
+	                <h2>Mon vécu</h2>
+	                <hr class="star">
+				</a>
             </div>
         </div>
-        <div class="row">
+        <div id="collapseVecu" class="row panel-collapse collapse">
             <div class="col-sm-4">
                 <p>Avec plus de 15 ans d'expérience dans les technologies JEE, j'ai pu suivre l'évolution des nouvelles technologies.
                     J'ai gardé de mes premières années le soucis d'un code clair, le plus optimisé possible et dimensionné au besoin.
@@ -184,11 +186,13 @@
         </div>
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2>Ma vision</h2>
-                <hr class="star">
+                <a data-toggle="collapse" href="#collapseVision" class="collapsed">
+	                <h2>Ma vision</h2>
+	                <hr class="star">
+				</a>
             </div>
         </div>
-        <div class="row">
+        <div id="collapseVision" class="row panel-collapse collapse">
 
             <div class="col-sm-4">
                 <p>
@@ -218,11 +222,13 @@
          </div>
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2>Mon actualité</h2>
-                <hr class="star">
+                <a data-toggle="collapse" href="#collapseActualite" class="collapsed">
+                	<h2>Mon actualité</h2>
+                	<hr class="star">
+				</a>
             </div>
         </div>
-        <div class="row">
+        <div class="row panel-collapse collapse" id="collapseActualite">
            <div class="col-sm-4">
                 <p>Aujourd'hui, j'ai trouvé une dynamique projet dans un cadre qui favorise la communication et l'agilité, dans l'environnement
                     technologique que j'affectionne : JEE, AngularJS, Agilité.
@@ -254,6 +260,7 @@
         </div>
         <div id="collapseCareer" class="row panel-collapse collapse">
             <div class="col-sm-3">
+<img src="img/texa.png"/>
                 <h5>Février 2016 - Aujourd'hui</h5>
                 <h4>Texa Services</h4>
                 Texa Groupe
@@ -317,19 +324,7 @@
         </div>
         <div class="row">
             <div class="col-sm-4 portfolio-item">
-                <a href="#itex" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-search-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/empty.png" class="img-responsive portfolio-orange" alt="">
-
-                    <div class="portfolio-picture texaservice"></div>
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="#itex" class="portfolio-link" data-toggle="modal">
+                <a href="#texa" class="portfolio-link" data-toggle="modal">
                     <div class="caption">
                         <div class="caption-content">
                             <i class="fa fa-search-plus fa-3x"></i>
@@ -480,7 +475,7 @@
 </div>
 
 <!-- Portfolio Modals -->
-<div class="portfolio-modal modal fade" id="itex" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="portfolio-modal modal fade" id="texa" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
       <div class="close-modal" data-dismiss="modal"><i class="fa fa-times fa-3x" aria-hidden="true"></i></div>
         <div class="container">
@@ -532,92 +527,64 @@
                 </ul>
               </dd>
             </dl>
-            <hr class="star-primary">
-          </div>
-          <div class="modal-footer">
             <ul class="list-inline item-details">
-                <li>Client: <strong>Texa Service</strong></li>
-                <li>Contexte: <strong>Secteur Assurance / Développement Agile</strong></li>
                 <li>Date: <strong>Janvier 2014 - Aujourd'hui</strong></li>
             </ul>
 
-            <button type="button" class="btn btn-default close-modal" data-dismiss="modal">
-              <i class="fa fa-times fa-2x" aria-hidden="true"></i>
-                  Fermer
-              </button>
-          </div>
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade" id="ntm" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal"><i class="fa fa-times fa-3x" aria-hidden="true"></i></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="modal-body">
-                      <div class="close-modal close h1" data-dismiss="modal">&times;</div>
-                      <h2>Nouveau Texi Mobile<br>
-                      <small>Logiciel d'expertise sur site</small></h2>
-                      <h5>Developpeur Fullstack JavaScript | Technical Leader</h5>
-                      <hr class="star-primary">
-                      <dl>
-                        <dt>Taches</dt>
-                        <dd>
-                  				<ul>
-                            <li>Cadrage technique</li>
-                  					<li>Implémentation des User Stories</li>
-                  					<li>Revues de code</li>
-                  					<li>Evaluation technique des candidats lors des entretiens.</li>
-                  					<li>Animation de dojos, rétrospectives et points techniques.</li>
-                  					<li>Formation et soutien technique des nouveaux arrivant</li>
-                  					<li>Veille technologique.</li>
-                  					<li>Méthodologie Agile, Kanban électronique.</li>
-                  				</ul>
-                        </dd>
-                      </dl>
-                      <dl>
-                        <dt>Technologies</dt>
-                        <dd>
-                  				<ul>
-                            <li>Angular 2</li>
-                            <li>Node JS</li>
-                            <li>NoSQL</li>
-                            <li>Electron</li>
-                            <li>Bootstrap</li>
-                          </ul>
-                        </dd>
-                      </dl>
-                      <dl>
-                        <dt>&Eacute;quipe</dt>
-                        <dd>
-                          <ul>
-                            <li>3 développeurs</li>
-                            <li>1 chef de projet</li>
-                            <li>1 MOA</li>
-                          </ul>
-                        </dd>
-                      </dl>
-                      <hr class="star-primary">
-                    </div>
-                </div>
+            <hr class="star-primary">
+              <h2>Nouveau Texi Mobile<br>
+              <small>Logiciel d'expertise sur site</small></h2>
+              <h5>Developpeur Fullstack JavaScript | Technical Leader</h5>
+              <hr class="star-primary">
+              <dl>
+                <dt>Taches</dt>
+                <dd>
+          				<ul>
+                    <li>Cadrage technique</li>
+          					<li>Implémentation des User Stories</li>
+          					<li>Revues de code</li>
+          					<li>Evaluation technique des candidats lors des entretiens.</li>
+          					<li>Animation de dojos, rétrospectives et points techniques.</li>
+          					<li>Formation et soutien technique des nouveaux arrivant</li>
+          					<li>Veille technologique.</li>
+          					<li>Méthodologie Agile, Kanban électronique.</li>
+          				</ul>
+                </dd>
+              </dl>
+              <dl>
+                <dt>Technologies</dt>
+                <dd>
+          				<ul>
+                    <li>Angular 2</li>
+                    <li>Node JS</li>
+                    <li>NoSQL</li>
+                    <li>Electron</li>
+                    <li>Bootstrap</li>
+                  </ul>
+                </dd>
+              </dl>
+              <dl>
+                <dt>&Eacute;quipe</dt>
+                <dd>
+                  <ul>
+                    <li>3 développeurs</li>
+                    <li>1 chef de projet</li>
+                    <li>1 MOA</li>
+                  </ul>
+                </dd>
+              </dl>
             </div>
+            <div class="modal-footer">
+              <ul class="list-inline item-details">
+                  <li>Client : <strong>Texa Service</strong></li>
+                  <li>Contexte : <strong>Secteur Assurance / Développement Agile</strong></li>
+                  <li>Date : <strong>Février 2017 - Aujourd'hui</strong></li>
+              </ul>
 
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="modal-footer">
-                      <ul class="list-inline item-details">
-                          <li>Client : <strong>Texa Service</strong></li>
-                          <li>Contexte : <strong>Secteur Assurance / Développement Agile</strong></li>
-                          <li>Date : <strong>Février 2017 - Aujourd'hui</strong></li>
-                      </ul>
-
-                      <button type="button" class="btn btn-default close-modal" data-dismiss="modal">
-                        <i class="fa fa-times fa-2x" aria-hidden="true"></i>
-                            Fermer
-                        </button>
-                    </div>
-                </div>
+              <button type="button" class="btn btn-default close-modal" data-dismiss="modal">
+                <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                    Fermer
+                </button>
             </div>
         </div>
     </div>
@@ -823,7 +790,7 @@
                     <li>Un chef de projet</li>
                     <li>Un Développeur</li>
                     <li>Un lead developpeur</li>
-                    <li>une AMOA<li>
+                    <li>une AMOA</li>
                   </ul></dd>
                 </dl>
             </div>
