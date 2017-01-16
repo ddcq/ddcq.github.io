@@ -1,0 +1,32 @@
+{
+  "name": "ddcq.github.io",
+  "version": "1.0.0",
+  "description": "CV Denis DECLERCQ",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^0.4.0",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-qunit": "^0.5.2",
+    "grunt-contrib-uglify": "^0.5.1",
+    "grunt-contrib-watch": "^0.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ddcq/ddcq.github.io.git"
+  },
+  "keywords": [
+    "CV"
+  ],
+  "author": "Denis DECLERCQ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ddcq/ddcq.github.io/issues"
+  },
+  "homepage": "https://github.com/ddcq/ddcq.github.io#readme"
+}
