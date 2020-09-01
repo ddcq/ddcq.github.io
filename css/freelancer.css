@@ -374,6 +374,11 @@ section#presentation p {
     background-color: #418689;
 }
 
+#portfolio .portfolio-item .portfolio-picture.evenium {
+    background: url("../img/portfolio/evenium.png") no-repeat;
+    background-size: cover;
+}
+
 #portfolio .portfolio-item .portfolio-picture.texaservice {
     background: url("../img/portfolio/texaservice.png") no-repeat;
     background-size: cover;
