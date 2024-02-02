@@ -59,7 +59,7 @@ export default function Header() {
           className="focus:outline-none h-10 rounded-full px-3 border"
         >
           <option value="">Default</option>
-          {'light dark cupcake bumblebee emerald corporate synthwave retro cyberpunk valentine halloween garden forest aqua lofi pastel fantasy wireframe black luxury dracula cmyk autumn business acid lemonade night coffee winter dim nord sunset'
+          {'light dark'
             .split(' ')
             .map((t) => (
               <option key={t} value={t}>{t}</option>

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={cx('bg-base-100 text-base-content font-montserrat')}>{children}</body>
+      <body className="bg-base-100 text-base-content font-montserrat">{children}</body>
     </html>
   );
 }
