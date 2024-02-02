@@ -2,31 +2,31 @@
   "name": "ddcq.github.io",
   "version": "1.0.0",
   "description": "CV Denis DECLERCQ",
-  "main": "Gruntfile.js",
-  "dependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-concat": "^0.4.0",
-    "grunt-contrib-connect": "^1.0.2",
-    "grunt-contrib-jshint": "^0.10.0",
-    "grunt-contrib-qunit": "^0.5.2",
-    "grunt-contrib-uglify": "^0.5.1",
-    "grunt-contrib-watch": "^0.6.1"
-  },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "concurrently \"next dev\" \"npm run tailwind\"",
+    "build": "next build",
+    "start": "next start",
+    "tailwind": "tailwindcss -i ./styles/globals.css -o ./styles/output.css --watch"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ddcq/ddcq.github.io.git"
+  "dependencies": {
+    "class-variance-authority": "^0.7.0",
+    "next": "13.5.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "theme-change": "^2.5.0"
   },
-  "keywords": [
-    "CV"
-  ],
-  "author": "Denis DECLERCQ",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ddcq/ddcq.github.io/issues"
-  },
-  "homepage": "https://github.com/ddcq/ddcq.github.io#readme"
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10",
+    "@types/node": "20.11.5",
+    "@types/react": "18.2.48",
+    "@xpd/tailwind-3dtransforms": "^1.0.3",
+    "autoprefixer": "^10.4.15",
+    "concurrently": "^8.2.2",
+    "daisyui": "^4.6.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-node": "^11.1.0",
+    "postcss": "8.4.30",
+    "tailwindcss": "3.3.3",
+    "typescript": "5.3.3"
+  }
 }
