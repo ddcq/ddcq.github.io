@@ -434,14 +434,6 @@ video {
   display: none;
 }
 
-:root {
-  --tw-rotate-x: 0;
-  --tw-rotate-y: 0;
-  --tw-translate-z: 0;
-  --tw-scale-z: 1;
-  --tw-rotate-3d: 0,0,0,0deg;
-}
-
 :root,
 [data-theme] {
   background-color: var(--fallback-b1,oklch(var(--b1)/1));
@@ -636,6 +628,14 @@ html {
   --b2: 0.232607 0.013807 253.100675;
   --b3: 0.211484 0.01165 254.087939;
   --bc: 0.746477 0.0216 264.435964;
+}
+
+:root {
+  --tw-rotate-x: 0;
+  --tw-rotate-y: 0;
+  --tw-translate-z: 0;
+  --tw-scale-z: 1;
+  --tw-rotate-3d: 0,0,0,0deg;
 }
 
 *, ::before, ::after {
