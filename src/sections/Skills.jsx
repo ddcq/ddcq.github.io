@@ -5,7 +5,7 @@ import Title from '../components/Title';
 export default function Skills() {
   return <section id="skills">
     <div className="flex flex-col">
-      <Title>Skills</Title>
+      <Title>Compétences</Title>
       <div className="flex justify-around ">
         <Card
           className="w-80 h-40"

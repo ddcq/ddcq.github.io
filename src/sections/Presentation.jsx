@@ -8,7 +8,6 @@ export default function Presentation() {
             <p className="text-xl italic font-thin">Bonjour, je m'appelle Denis et je suis</p>
             <h1 className="text-5xl font-bold">Développeur Web fullstack sénior</h1>
             <p className="py-6">Passionné et curieux - Convaincu par l'Agilité</p>
-            <button className="btn btn-primary">Get Started</button>
           </div>
         </div>
       </div>

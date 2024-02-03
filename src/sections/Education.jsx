@@ -4,7 +4,7 @@ import EducationCard from '../components/EducationCard'
 
 export default function Education() {
   return (
-    <section>
+    <section id="education">
       <Title>Formation</Title>
       <div className="flex flex-wrap w-full justify-center">
         <EducationCard year="2001" name="Master 2 Génie des Logiciels Applicatifs" org="UPMC" />

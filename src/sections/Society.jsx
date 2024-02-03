@@ -4,7 +4,7 @@ import SocietyCard from '../components/SocietyCard'
 
 export default function Society() {
   return (
-    <section>
+    <section id="society">
       <Title>Carrière professionnelle</Title>
       <p className="italic text-sm text-center">Les entreprises qui m'ont fait confiance avant vous</p>
       <div className="flex flex-wrap w-full justify-center">
