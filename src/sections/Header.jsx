@@ -2,8 +2,7 @@
 
 export default function Header() {
   return (
-    <header className="sticky top-0 bg-transparent z-50">
-      <div className="navbar">
+    <header className="sticky top-0 bg-transparent z-50 navbar">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex="0" role="button" className="btn btn-ghost btn-circle bg-base-100">
@@ -41,7 +40,6 @@ export default function Header() {
             <option value="dark">dark</option>
           </select>
         </div>
-      </div>
     </header>
   )
 }
