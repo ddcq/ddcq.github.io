@@ -12,6 +12,17 @@ module.exports = {
       montserrat: ['Montserrat'],
     },
   },
-  plugins: [require('@tailwindcss/typography'), require('@xpd/tailwind-3dtransforms'), require('daisyui')],
-  daisyui: { themes: ["light", "dark"] },
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('@xpd/tailwind-3dtransforms'),
+    require('daisyui'),
+    plugin(function ({ addBase, addComponents, addUtilities, theme }) {
+      addComponents({
+        '.rotateCard':  {
+          
+        }
+      })
+    }),
+  ],
+  daisyui: { themes: ['light', 'dark'] },
 }

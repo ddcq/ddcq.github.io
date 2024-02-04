@@ -43,23 +43,3 @@ export default function Card({ front, back, className }: Props) {
     </div>
   )
 }
-
-const blur =
-  "after:absolute after:content-{''} after:top-7 after:left-0 after:right-0 after:-z-10 after:w-full after:h-full after:scale-75 after:blur-25 transition-opacity"
-/*
-.card::after {
-  position: absolute;
-  content: "";
-  top: 30px;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  transform: scale(0.8);
-  filter: blur(25px);
-  background: #f7ba2b;
-  background: var(--background);
-  transition: opacity .5s;
- }
- */
