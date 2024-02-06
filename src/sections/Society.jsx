@@ -7,7 +7,7 @@ export default function Society() {
     <section id="society">
       <Title>Carrière professionnelle</Title>
       <p className="italic text-sm text-center">Les entreprises qui m'ont fait confiance avant vous</p>
-      <div className="flex flex-wrap w-full justify-center">
+      <div className="flex flex-wrap w-full justify-center ml-lg">
         {[
           ['Adex', 'Aubay', 'Septembre 2001 - Décembre 2005', '/img/aubay.jpg'],
           ['Logysil', 'Altelios Technology', 'Janvier 2006 - Décembre 2013', '/img/altelios.jpg'],
