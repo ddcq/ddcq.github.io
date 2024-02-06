@@ -16,13 +16,6 @@ module.exports = {
     require('@tailwindcss/typography'),
     require('@xpd/tailwind-3dtransforms'),
     require('daisyui'),
-    plugin(function ({ addBase, addComponents, addUtilities, theme }) {
-      addComponents({
-        '.rotateCard':  {
-          
-        }
-      })
-    }),
   ],
   daisyui: { themes: ['light', 'dark'] },
 }
