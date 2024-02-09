@@ -6,7 +6,7 @@ export default function Education() {
   return (
     <section id="education">
       <Title>Formation</Title>
-      <ul class="timeline lg:grid lg:grid-cols-4 timeline-vertical lg:timeline-horizontal">
+      <ul className="timeline lg:grid lg:grid-cols-4 timeline-vertical lg:timeline-horizontal" style= {{'--timeline-col-start': '52px'}}>
         <EducationCard year="2001" name="Master 2 Génie des Logiciels Applicatifs" org="UPMC" />
         <EducationCard year="2003" name="Teradata Basic, Physical Implementation, SQL, Utilitaires" />
         <EducationCard year="2013" name="Scrum Master Certification" org="SCRUM ALLIANCE, INC." />

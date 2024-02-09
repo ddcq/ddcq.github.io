@@ -4,9 +4,9 @@ import Title from '../components/Title'
 export default function About() {
   return (
     <section className="p-24" id="about">
-      <div role="tablist" class="tabs tabs-lifted tabs-lg">
-        <input type="radio" name="my_tabs_2" role="tab" class="tab whitespace-nowrap" aria-label="Mon vécu" />
-        <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
+      <div role="tablist" className="tabs tabs-lifted tabs-lg">
+        <input type="radio" name="my_tabs_2" role="tab" className="tab whitespace-nowrap" aria-label="Mon vécu" />
+        <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-box p-6">
           <p>
             Avec près de 20 ans d'expérience dans les technologies JEE, j'ai pu suivre l'évolution des nouvelles technologies. J'ai gardé de mes premières
             années le soucis d'un code clair, le plus optimisé possible et dimensionné au besoin.
@@ -21,8 +21,8 @@ export default function About() {
           </p>
         </div>
 
-        <input type="radio" name="my_tabs_2" role="tab" class="tab whitespace-nowrap" aria-label="Ma vision" checked />
-        <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
+        <input type="radio" name="my_tabs_2" role="tab" className="tab whitespace-nowrap" aria-label="Ma vision" />
+        <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-box p-6">
           <p>
             Pour moi, un bon informaticien est avant tout fainéant, dans le sens où il est toujours prêt pour travailler dur afin de tout automatiser et de
             réduire au maximum les tâches fastidieuses. C'est dans cet esprit que les IDE progressent, que le DevOps, et l'agilité ont vu le jour.
@@ -41,8 +41,8 @@ export default function About() {
           </p>
         </div>
 
-        <input type="radio" name="my_tabs_2" role="tab" class="tab whitespace-nowrap" aria-label="Ma vision" />
-        <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
+        <input type="radio" name="my_tabs_2" role="tab" className="tab whitespace-nowrap" aria-label="Ma vision" />
+        <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-box p-6">
           <p>
             Aujourd'hui, j'ai trouvé une dynamique projet dans un cadre qui favorise la communication et l'agilité, dans l'environnement technologique que
             j'affectionne : JEE, React JS, Agilité.
