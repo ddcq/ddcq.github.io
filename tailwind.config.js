@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: ['class', '[data-theme="dark"]'],
+  darkMode: [ 'class', '[color-scheme="dark"]' ],
   content: ['./app/**/*.{js,ts,jsx,tsx,mdx}', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     backgroundImage: {
@@ -17,5 +17,8 @@ module.exports = {
     require('@xpd/tailwind-3dtransforms'),
     require('daisyui'),
   ],
-  daisyui: { themes: ['light', 'dark'] },
+  daisyui: {
+    styled: true,
+    themes: true,
+   },
 }

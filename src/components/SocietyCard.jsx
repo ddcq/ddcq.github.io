@@ -5,7 +5,6 @@ import { useInView } from 'react-intersection-observer'
 
 export default function SocietyCard({ img, society, group, period }) {
   const { inView, ref } = useInView({ triggerOnce: true })
-  console.log("inview", inView, society)
   return (
     <div
       ref={ref}

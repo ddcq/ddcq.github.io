@@ -1,6 +1,13 @@
 'use client'
+import { useLocalStorage } from '@uidotdev/usehooks'
+import daisyThemes from 'daisyui/src/theming/themes'
+import { useEffect } from 'react'
 
 export default function Header() {
+  const [savedTheme, saveTheme] = useLocalStorage('theme', 'dark')
+  useEffect(() => {
+      changeTheme(savedTheme)
+  }, [savedTheme])
   return (
     <header className="sticky top-0 bg-transparent z-50 navbar">
         <div className="navbar-start">
@@ -35,11 +42,18 @@ export default function Header() {
         </div>
 
         <div className="navbar-end">
-          <select data-choose-theme className="focus:outline-none h-10 rounded-full px-3 border">
-            <option value="light">light</option>
-            <option value="dark">dark</option>
+          <select data-choose-theme className="focus:outline-none h-10 rounded-full px-3 border" value={savedTheme} onChange={e => {
+            saveTheme(e.target.value)
+          }}>
+            { Object.keys(daisyThemes).map(theme => <option value={theme} key={theme}>{theme}</option>)}
           </select>
         </div>
     </header>
   )
+}
+
+function changeTheme(themeName) {
+  const el = document.documentElement
+  el.setAttribute("data-theme", themeName);
+  el.setAttribute("color-scheme", daisyThemes[themeName]['color-scheme'])
 }

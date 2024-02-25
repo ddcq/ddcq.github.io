@@ -1,36 +1,28 @@
 'use client'
-
-import { useEffect } from 'react'
-import { themeChange } from 'theme-change'
-
 export default function AirFranceDeclic() {
-  useEffect(() => themeChange(false), [])
-
   return (
     <div className="hero">
       <article className="prose hero-content  flex-col">
         <img src="img/cockpit.jpg" />
         <div className="navbar sticky top-0 bg-base-100">
-        <div className="breadcrumbs navbar-start">
-          <ul>
-            <li>
-              <a href="/">🏚️ Home</a>
-            </li>
-            <li>✈️ Air France</li>
-            <li>📁 Declic</li>
-          </ul>
+          <div className="breadcrumbs navbar-start">
+            <ul>
+              <li>
+                <a href="/">🏚️ Home</a>
+              </li>
+              <li>✈️ Air France</li>
+              <li>📁 Declic</li>
+            </ul>
+          </div>
+          <div className="navbar-end">
+            <a className="btn btn-primary" href="/">
+              Retour
+            </a>
+          </div>
         </div>
-        <div className="navbar-end">
-          <a className="btn btn-primary" href="/">
-            Retour
-          </a>
-        </div>
-      </div>
-        <h2 className='text-5xl font-bold text-center'>
-          DECLIC
-        </h2>
-        <b className='text-3xl'>Dématérialisation de la documentation aéronautique embarquée.</b>
-        <h5  className='text-3xl'>Ingénieur étude et développement</h5>
+        <h2 className="text-5xl font-bold text-center">DECLIC</h2>
+        <b className="text-3xl">Dématérialisation de la documentation aéronautique embarquée.</b>
+        <h5 className="text-3xl">Ingénieur étude et développement</h5>
         <hr />
         <div className="text-left">
           <dl>

@@ -2,7 +2,6 @@ import "../styles/globals.css";
 import "../styles/nothing.css"
 import "../styles/montserrat.css"
 import type { Metadata } from "next";
-import { cx } from "class-variance-authority";
 
 export const metadata: Metadata = {
   title: 'CV - Denis Declercq',

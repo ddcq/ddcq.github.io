@@ -24,19 +24,21 @@ export default function About() {
         <input type="radio" name="my_tabs_2" role="tab" className="tab whitespace-nowrap" aria-label="Ma vision" />
         <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-box p-6">
           <p>
-            Pour moi, un bon informaticien est avant tout fainéant, dans le sens où il est toujours prêt pour travailler dur afin de tout automatiser et de
-            réduire au maximum les tâches fastidieuses. C’est dans cet esprit que les IDE progressent et que le DevOps et l’agilité ont vu le jour.
+            Un informaticien diot pouvoir mesurer ses efforts. S’il veut pouvoir se concentrer pleinement sur du code à forte valeur ajoutée, il est
+            indispensable que les tâches fastidieuses et répétitives lui prennent peu de temps et d’efforts. C’est dans cet esprit que les IDE progressent et
+            que le DevOps et l’agilité ont vu le jour.
           </p>
           <p>
-            Docker, les micro-services, NoSQL, le Big Data, toutes ces technologies sont incroyables. Mais ce ne sont que des outils au profit d’une meilleure
-            expérience utilisateur. C’est toujours l’UX qui guide le projet et non la techno.
+            Docker, les micro-services, NoSQL, le Big Data, toutes ces technologies sont incroyables. Mais ce ne sont que des outils au service d’une meilleure
+            expérience utilisateur. Le choix d’introduire un nouveau framework ne doit être guidé que pour résoudre une problématique, ce qui, in fine,
+            améliorera le quotidien de nos utilisateurs ou même des membres de l’équipe.
           </p>
           <p>
             L’informatique est en perpétuel évolution et nous oblige à nous tenir informés des nouvelles avancées. La veille technologies fait partie intégrante
             de notre métier.
           </p>
           <p>
-            Agilité et DevOps créent une révolution dans la gestion des projets informatiques. Lorsque l’on a testé les méthodes agiles et l’intégration
+            Agilité et DevOps créent une révolution dans la gestion des projets informatiques. Lorsque l’on a testé les méthodes agiles et l’amélioration
             continue, il est impossible de revenir à une gestion classique et des cycles en V.
           </p>
         </div>
