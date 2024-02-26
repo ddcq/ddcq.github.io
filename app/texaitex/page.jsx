@@ -1,5 +1,9 @@
 'use client'
+
+import { useTheme } from '../../src/hooks/useTheme'
+
 export default function TexaITex() {
+  useTheme()
   return (
     <div className="hero">
       <article className="prose hero-content  flex-col">
