@@ -535,6 +535,7 @@ html {
   --su: 0.627052 0.169912 149.213788;
   --wa: 0.66584 0.157422 58.31834;
   --er: 0.7395 0.19 27.33;
+  font-family: 'Agbalumo', system-ui;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -604,6 +605,7 @@ html {
   --su: 0.627052 0.169912 149.213788;
   --wa: 0.66584 0.157422 58.31834;
   --er: 0.7395 0.19 27.33;
+  font-family: 'Agbalumo', system-ui;
 }
 
 [data-theme=black] {

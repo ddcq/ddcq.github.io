@@ -2,6 +2,7 @@ import "../styles/globals.css";
 import "../styles/nothing.css"
 import '@fontsource-variable/montserrat';
 import '@fontsource/courier-prime';
+import '@fontsource/agbalumo';
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

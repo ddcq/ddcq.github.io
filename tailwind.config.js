@@ -1,5 +1,6 @@
 const daisyThemes = require('daisyui/src/theming/themes')
 const fonts = {
+  aqua: "'Agbalumo', system-ui",
   dark: "'Montserrat Variable', system-ui",
   synthwave: "'Courier Prime', monospace"
 }
