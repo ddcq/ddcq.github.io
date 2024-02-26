@@ -1,7 +1,7 @@
 'use client'
 import Title from '../components/Title'
 import EducationCard from '../components/EducationCard'
-import { useMediaQuery } from '@uidotdev/usehooks'
+import { useMediaQuery } from 'usehooks-ts'
 
 export default function Education() {
   const isLargeDevice = useMediaQuery('only screen and (min-width : 1024px)')

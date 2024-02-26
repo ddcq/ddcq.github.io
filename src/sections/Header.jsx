@@ -1,7 +1,7 @@
 'use client'
-import { useLocalStorage } from '@uidotdev/usehooks'
 import daisyThemes from 'daisyui/src/theming/themes'
 import { useEffect } from 'react'
+import { useLocalStorage } from 'usehooks-ts'
 
 export default function Header() {
   const [savedTheme, saveTheme] = useLocalStorage('theme', 'dark')
