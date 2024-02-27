@@ -4,6 +4,8 @@ import '@fontsource-variable/montserrat';
 import '@fontsource/courier-prime';
 import '@fontsource/agbalumo';
 import type { Metadata } from "next";
+import 'aos/dist/aos.css';
+import { AOSInit } from "./aos";
 
 export const metadata: Metadata = {
   title: 'CV - Denis Declercq',
@@ -15,6 +17,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <AOSInit/>
       <body className="bg-base-100 text-base-content">{children}</body>
     </html>
   );
