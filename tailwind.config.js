@@ -23,6 +23,14 @@ module.exports = {
     backgroundImage: {
       'hero-dark': "url('/img/clavier.jpg')",
       'hero-light': "url('/img/desktop-light.jpg')",
+      a: "url('/img/ia/a.webp')",
+      b: "url('/img/ia/b.webp')",
+      c: "url('/img/ia/c.webp')",
+      d: "url('/img/ia/d.webp')",
+      af1: "url('/img/af/avion1.jpg')",
+      af2: "url('/img/af/avion2.jpg')",
+      af3: "url('/img/af/avion3.jpg')",
+      cockpit: "url('/img/cockpit.jpg')",
     },
     fontFamily: {
       title: ['Nothing You Could Do']
@@ -32,6 +40,7 @@ module.exports = {
     require('@tailwindcss/typography'),
     require('@xpd/tailwind-3dtransforms'),
     require('daisyui'),
+    require('tailwindcss-3d'),
   ],
   daisyui: {
     styled: true,
