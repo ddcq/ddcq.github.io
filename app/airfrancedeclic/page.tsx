@@ -10,7 +10,7 @@ export default function AirFranceDeclic() {
       <Breadcrumbs breadcrumbs="✈️ Air France|📁 Declic" />
       <section className="parallax-section parallax-image bg-cockpit" />
       <section className="parallax-heading">
-        <h2 className="text-5xl font-bold text-center text-slate-100">DECLIC</h2>
+        <h2 className="parallax-title">DECLIC</h2>
       </section>
       <section className="parallax-section parallax-article">
         <p className="text-3xl text-center">Dématérialisation de la documentation aéronautique embarquée.</p>

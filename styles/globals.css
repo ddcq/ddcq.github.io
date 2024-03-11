@@ -26,3 +26,8 @@
   z-index: -1;
   transform: translateY(-50vh) translateZ(1px) scale(1.5);
 }
+
+.parallax-title {
+  @apply font-bold text-center text-slate-100;
+  font-size: clamp(1rem, -0.5rem + 8vw, 6rem);
+}

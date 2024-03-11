@@ -3990,6 +3990,38 @@ html {
   background-color: transparent;
 }
 
+.bg-\[url\(\'\/img\/ca\/ca\.jpg\'\)\] {
+  background-image: url('/img/ca/ca.jpg');
+}
+
+.bg-\[url\(\'\/img\/ca\/credit_agricole\.jpg\'\)\] {
+  background-image: url('/img/ca/credit_agricole.jpg');
+}
+
+.bg-\[url\(\'\/img\/ca\/keys2\.jpg\'\)\] {
+  background-image: url('/img/ca/keys2.jpg');
+}
+
+.bg-\[url\(\'\/img\/ca\/labyrinth\.jpg\'\)\] {
+  background-image: url('/img/ca/labyrinth.jpg');
+}
+
+.bg-\[url\(\'\/img\/ca\/rack\.jpg\'\)\] {
+  background-image: url('/img/ca/rack.jpg');
+}
+
+.bg-\[url\(\'\/img\/ca\/verre\.jpg\'\)\] {
+  background-image: url('/img/ca/verre.jpg');
+}
+
+.bg-\[url\(\'\/img\/ca\/virtualization\.jpg\'\)\] {
+  background-image: url('/img/ca/virtualization.jpg');
+}
+
+.bg-\[url\(\'\/img\/keys\.jpg\'\)\] {
+  background-image: url('/img/keys.jpg');
+}
+
 .bg-af1 {
   background-image: url('/img/af/avion1.jpg');
 }
@@ -4117,10 +4149,6 @@ html {
   font-weight: 900;
 }
 
-.font-bold {
-  font-weight: 700;
-}
-
 .font-thin {
   font-weight: 100;
 }
@@ -4157,11 +4185,6 @@ html {
 .text-secondary-content {
   --tw-text-opacity: 1;
   color: var(--fallback-sc,oklch(var(--sc)/var(--tw-text-opacity)));
-}
-
-.text-slate-100 {
-  --tw-text-opacity: 1;
-  color: rgb(241 245 249 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -4351,6 +4374,14 @@ html {
 .parallax-heading {
   z-index: -1;
   transform: translateY(-50vh) translateZ(1px) scale(1.5);
+}
+
+.parallax-title {
+  text-align: center;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(241 245 249 / var(--tw-text-opacity));
+  font-size: clamp(1rem, -0.5rem + 8vw, 6rem);
 }
 
 @media (min-width: 1024px) {
