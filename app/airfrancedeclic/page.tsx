@@ -2,6 +2,7 @@
 
 import { useTheme } from '../../src/hooks/useTheme'
 import Breadcrumbs from '../../src/components/Breadcrumbs'
+import { ParallaxTitle } from '../../src/components/ParallaxTitle'
 
 export default function AirFranceDeclic() {
   useTheme()
@@ -12,22 +13,7 @@ export default function AirFranceDeclic() {
       <section className="parallax-heading">
         <h2 className="parallax-title">DECLIC</h2>
       </section>
-      <section className="parallax-section parallax-article">
-        <p className="text-3xl text-center">Dématérialisation de la documentation aéronautique embarquée.</p>
-        <p className="text-3xl">Ingénieur étude et développement</p>
-        <ul>
-          <li>
-            Client : <strong>AIR FRANCE</strong>
-          </li>
-          <li>
-            Contexte :
-            <strong>Secteur Transport / Maintenance Applicative</strong>
-          </li>
-          <li>
-            Date : <strong>Septembre 2004 - mars 2007</strong>
-          </li>
-        </ul>
-      </section>
+      <ParallaxTitle title="Dématérialisation de la documentation aéronautique embarquée." subtitle="Ingénieur étude et développement" />
       <section className="parallax-section parallax-image bg-af1" />
       <section className="parallax-section parallax-article min-h-min">
         <h3 className="text-5xl">Description</h3>
@@ -64,6 +50,21 @@ export default function AirFranceDeclic() {
           <li>Un Développeur</li>
           <li>Un lead developpeur</li>
           <li>une AMOA</li>
+        </ul>
+      </section>
+      <section className="parallax-section parallax-image bg-[url('/img/af/a380.webp')]" />
+      <section className="parallax-section parallax-article">
+        <ul>
+          <li>
+            Client : <strong>AIR FRANCE</strong>
+          </li>
+          <li>
+            Contexte :
+            <strong>Secteur Transport / Maintenance Applicative</strong>
+          </li>
+          <li>
+            Date : <strong>Septembre 2004 - mars 2007</strong>
+          </li>
         </ul>
       </section>
     </div>

@@ -41,6 +41,7 @@ module.exports = {
     require('@xpd/tailwind-3dtransforms'),
     require('daisyui'),
     require('tailwindcss-3d'),
+    require("tailwind-fluid-typography"),
   ],
   daisyui: {
     styled: true,

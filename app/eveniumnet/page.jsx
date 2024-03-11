@@ -1,6 +1,7 @@
 'use client'
 
 import Breadcrumbs from '../../src/components/Breadcrumbs'
+import { ParallaxTitle } from '../../src/components/ParallaxTitle'
 import { useTheme } from '../../src/hooks/useTheme'
 
 export default function EveniumNet() {
@@ -12,10 +13,7 @@ export default function EveniumNet() {
       <section className="parallax-heading">
         <h2 className="parallax-title">Net</h2>
       </section>
-      <section className="parallax-section parallax-article">
-        <p className="text-4xl text-center">Gestionnaire d’invitation et d’inscription des participants</p>
-        <h5 className="text-3xl text-center">Developpeur Fullstack JEE/Javascript</h5>
-      </section>
+      <ParallaxTitle title="Gestionnaire d’invitation et d’inscription des participants" subtitle="Developpeur Fullstack JEE/Javascript" />
       <section className="parallax-section parallax-image bg-[url('/img/ev/a.jpg')]" />
       <section className="parallax-section parallax-article">
         Evenium accompagne ses clients dans toutes les étapes de l’organisation de leurs événements : des inscriptions au reporting, en passant par l’accueil

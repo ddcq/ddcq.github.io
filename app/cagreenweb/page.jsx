@@ -2,6 +2,7 @@
 
 import Breadcrumbs from '../../src/components/Breadcrumbs'
 import { useTheme } from '../../src/hooks/useTheme'
+import { ParallaxTitle } from '../../src/components/ParallaxTitle'
 
 export default function CreditAgricoleGreenWeb() {
   useTheme()
@@ -12,13 +13,10 @@ export default function CreditAgricoleGreenWeb() {
       <section className="parallax-heading">
         <h2 className="parallax-title">GreenWeb</h2>
       </section>
-      <section className="parallax-section parallax-article">
-        <p className="text-4xl text-center">Migration du logiciel de Crédit</p>
-        <h5 className="text-3xl text-center">Ingénieur étude et développement</h5>
-      </section>
+      <ParallaxTitle title="Migration du logiciel de Crédit" subtitle="Ingénieur étude et développement" />
       <section className="parallax-section parallax-image bg-[url('/img/ca/keys2.jpg')]" />
       <section className="parallax-section parallax-article">
-        <h3 className="text-3xl">Tâches</h3>
+        <h3 className="fluid-3xl">Tâches</h3>
         <ul>
           <li>Développement et Intégration de modules techniques devant respecter la norme nationale (Java/Eclipse)</li>
           <li>Automatisation d'installation de serveurs supplémentaires (Script DOS)</li>
@@ -93,3 +91,4 @@ export default function CreditAgricoleGreenWeb() {
     </div>
   )
 }
+
