@@ -3851,6 +3851,10 @@ html {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .h-10 {
   height: 2.5rem;
 }
@@ -3908,6 +3912,10 @@ html {
   min-width: 100%;
 }
 
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -3930,6 +3938,10 @@ html {
 
 .justify-around {
   justify-content: space-around;
+}
+
+.gap-3 {
+  gap: 0.75rem;
 }
 
 .gap-8 {
@@ -4016,6 +4028,22 @@ html {
 
 .bg-\[url\(\'\/img\/ca\/virtualization\.jpg\'\)\] {
   background-image: url('/img/ca/virtualization.jpg');
+}
+
+.bg-\[url\(\'\/img\/ev\/a\.jpg\'\)\] {
+  background-image: url('/img/ev/a.jpg');
+}
+
+.bg-\[url\(\'\/img\/ev\/c\.jpg\'\)\] {
+  background-image: url('/img/ev/c.jpg');
+}
+
+.bg-\[url\(\'\/img\/ev\/e\.jpg\'\)\] {
+  background-image: url('/img/ev/e.jpg');
+}
+
+.bg-\[url\(\'\/img\/ev\/f\.jpg\'\)\] {
+  background-image: url('/img/ev/f.jpg');
 }
 
 .bg-\[url\(\'\/img\/keys\.jpg\'\)\] {
@@ -4354,8 +4382,7 @@ html {
 }
 
 .parallax-article {
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-bg-opacity)));
+  background-color: var(--fallback-b2,oklch(var(--b2)/0.95));
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -4367,7 +4394,7 @@ html {
   }
 }
 
-.parallax-article {
+.parallax-article:not(:last-of-type) {
   height: 50vh;
 }
 
@@ -4377,10 +4404,14 @@ html {
 }
 
 .parallax-title {
+  background-color: var(--fallback-s,oklch(var(--s)/0.3));
   text-align: center;
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(241 245 249 / var(--tw-text-opacity));
+  --tw-backdrop-blur: blur(4px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
   font-size: clamp(1rem, -0.5rem + 8vw, 6rem);
 }
 

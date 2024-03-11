@@ -19,7 +19,9 @@
   height: 100vh;
 }
 .parallax-article {
-  @apply flex-col bg-base-200 space-y-4 content-center !grid md:p-24 shadow-2xl;
+  @apply flex-col bg-base-200/95 space-y-4 content-center !grid md:p-24 shadow-2xl;
+}
+.parallax-article:not(:last-of-type) {
   height: 50vh;
 }
 .parallax-heading {
@@ -28,6 +30,6 @@
 }
 
 .parallax-title {
-  @apply font-bold text-center text-slate-100;
+  @apply font-bold text-center text-slate-100 backdrop-blur-sm bg-secondary/30;
   font-size: clamp(1rem, -0.5rem + 8vw, 6rem);
 }
