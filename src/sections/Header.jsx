@@ -1,9 +1,11 @@
 'use client'
 import daisyThemes from 'daisyui/src/theming/themes'
 import { useTheme } from '../hooks/useTheme'
+import { useMemo } from 'react'
 
 export default function Header() {
-  const [savedTheme, saveTheme] = useTheme()
+  const [, saveTheme] = useTheme()
+  const themes = useMemo(() => Object.entries(Object.groupBy(Object.entries(daisyThemes), ([_id, theme]) => theme['color-scheme'])), [])
   return (
     <header className="sticky top-0 bg-transparent z-50 navbar">
       <div className="navbar-start">
@@ -38,20 +40,22 @@ export default function Header() {
       </div>
 
       <div className="navbar-end">
-        <select
-          data-choose-theme
-          className="focus:outline-none h-10 rounded-full px-3 border"
-          value={savedTheme}
-          onChange={(e) => {
-            saveTheme(e.target.value)
-          }}
-        >
-          {Object.keys(daisyThemes).map((theme) => (
-            <option value={theme} key={theme}>
-              {theme}
-            </option>
-          ))}
-        </select>
+        {themes.map(([mode, themesByMode]) => (
+          <div class="dropdown">
+            <button className="m-1 btn rounded-box btn-neutral">Themes {mode}</button>
+            <div className="shadow menu dropdown-content z-[1] rounded-box w-52 max-h-50vh">
+              <ul>
+                {themesByMode.map(([id]) => (
+                  <li data-theme={id}>
+                    <button className="hover:bg-gradient-to-r from-base-100 via-primary to-secondary from-50% p-1" onClick={() => saveTheme(id)}>
+                      {id}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        ))}
       </div>
     </header>
   )

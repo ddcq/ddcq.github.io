@@ -19,9 +19,9 @@ export default function About() {
           la partie "Mainframe" qui dans beaucoup d’entreprises gardent encore le cœur du métier.
         </div>
       </div>
-      <div data-aos="fade-right" className="card sm:card-side glass shadow-xl xl:w-1/2">
+      <div data-aos="fade-right" className="card md:card-side glass shadow-xl max-w-2xl">
         <figure>
-          <img src="img/ia/a.webp" />
+          <img src="img/ia/a.webp" className="sm:h-full w-full" />
         </figure>
         <div className="card-body">
           Je me suis également appliqué à perfectionner mes requêtes SQL pour soulager le serveur d’application. J’ai souhaité aussi connaître les véritables

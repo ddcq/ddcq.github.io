@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -32,9 +32,11 @@
 4. Use the user's configured `sans` font-family by default.
 5. Use the user's configured `sans` font-feature-settings by default.
 6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
 */
 
-html {
+html,
+:host {
   line-height: 1.5;
   /* 1 */
   -webkit-text-size-adjust: 100%;
@@ -44,12 +46,14 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
   font-variation-settings: normal;
   /* 6 */
+  -webkit-tap-highlight-color: transparent;
+  /* 7 */
 }
 
 /*
@@ -121,8 +125,10 @@ strong {
 }
 
 /*
-1. Use the user's configured `mono` font family by default.
-2. Correct the odd `em` font sizing in all browsers.
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
 */
 
 code,
@@ -131,8 +137,12 @@ samp,
 pre {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   /* 1 */
-  font-size: 1em;
+  font-feature-settings: normal;
   /* 2 */
+  font-variation-settings: normal;
+  /* 3 */
+  font-size: 1em;
+  /* 4 */
 }
 
 /*
@@ -2845,40 +2855,6 @@ html {
   background-color: currentColor;
 }
 
-.select {
-  display: inline-flex;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  height: 3rem;
-  min-height: 3rem;
-  padding-left: 1rem;
-  padding-right: 2.5rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  line-height: 2;
-  border-radius: var(--rounded-btn, 0.5rem);
-  border-width: 1px;
-  border-color: transparent;
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
-  background-image: linear-gradient(45deg, transparent 50%, currentColor 50%),
-    linear-gradient(135deg, currentColor 50%, transparent 50%);
-  background-position: calc(100% - 20px) calc(1px + 50%),
-    calc(100% - 16.1px) calc(1px + 50%);
-  background-size: 4px 4px,
-    4px 4px;
-  background-repeat: no-repeat;
-}
-
-.select[multiple] {
-  height: auto;
-}
-
 .timeline {
   position: relative;
   display: flex;
@@ -2996,6 +2972,10 @@ html {
     --btn-color: var(--fallback-a);
   }
 
+  .btn-neutral {
+    --btn-color: var(--fallback-n);
+  }
+
   .prose :where(code):not(:where([class~="not-prose"] *, pre *)) {
     background-color: var(--fallback-b3,oklch(var(--b3)/1));
   }
@@ -3033,12 +3013,22 @@ html {
   .btn-accent {
     --btn-color: var(--a);
   }
+
+  .btn-neutral {
+    --btn-color: var(--n);
+  }
 }
 
 .btn-accent {
   --tw-text-opacity: 1;
   color: var(--fallback-ac,oklch(var(--ac)/var(--tw-text-opacity)));
   outline-color: var(--fallback-a,oklch(var(--a)/1));
+}
+
+.btn-neutral {
+  --tw-text-opacity: 1;
+  color: var(--fallback-nc,oklch(var(--nc)/var(--tw-text-opacity)));
+  outline-color: var(--fallback-n,oklch(var(--n)/1));
 }
 
 .btn.glass {
@@ -3341,50 +3331,6 @@ html {
   100% {
     transform: translateY(0);
   }
-}
-
-.select:focus {
-  box-shadow: none;
-  border-color: var(--fallback-bc,oklch(var(--bc)/0.2));
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-  outline-color: var(--fallback-bc,oklch(var(--bc)/0.2));
-}
-
-.select-disabled,
-  .select:disabled,
-  .select[disabled] {
-  cursor: not-allowed;
-  --tw-border-opacity: 1;
-  border-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-border-opacity)));
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-bg-opacity)));
-  --tw-text-opacity: 0.2;
-}
-
-.select-disabled::-moz-placeholder, .select:disabled::-moz-placeholder, .select[disabled]::-moz-placeholder {
-  color: var(--fallback-bc,oklch(var(--bc)/var(--tw-placeholder-opacity)));
-  --tw-placeholder-opacity: 0.2;
-}
-
-.select-disabled::placeholder,
-  .select:disabled::placeholder,
-  .select[disabled]::placeholder {
-  color: var(--fallback-bc,oklch(var(--bc)/var(--tw-placeholder-opacity)));
-  --tw-placeholder-opacity: 0.2;
-}
-
-.select-multiple,
-  .select[multiple],
-  .select[size].select:not([size="1"]) {
-  background-image: none;
-  padding-right: 1rem;
-}
-
-[dir="rtl"] .select {
-  background-position: calc(0% + 12px) calc(1px + 50%),
-    calc(0% + 16px) calc(1px + 50%);
 }
 
 @keyframes skeleton {
@@ -3798,6 +3744,10 @@ html {
   z-index: 1;
 }
 
+.m-1 {
+  margin: 0.25rem;
+}
+
 .m-4 {
   margin: 1rem;
 }
@@ -3823,10 +3773,6 @@ html {
   display: grid;
 }
 
-.h-10 {
-  height: 2.5rem;
-}
-
 .h-36 {
   height: 9rem;
 }
@@ -3841,10 +3787,6 @@ html {
 
 .h-96 {
   height: 24rem;
-}
-
-.h-\[clamp\(17rem\2c -69rem\+137\.6vw\2c 60rem\)\] {
-  height: clamp(17rem,-69rem + 137.6vw,60rem);
 }
 
 .h-full {
@@ -3864,6 +3806,10 @@ html {
   width: 1.25rem;
 }
 
+.w-52 {
+  width: 13rem;
+}
+
 .w-80 {
   width: 20rem;
 }
@@ -3874,6 +3820,10 @@ html {
 
 .w-full {
   width: 100%;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
 }
 
 .max-w-3xl {
@@ -3924,16 +3874,8 @@ html {
   border-radius: var(--rounded-box, 1rem);
 }
 
-.rounded-full {
-  border-radius: 9999px;
-}
-
 .rounded-xl {
   border-radius: 0.75rem;
-}
-
-.border {
-  border-width: 1px;
 }
 
 .bg-base-100 {
@@ -4038,14 +3980,33 @@ html {
   background-image: url('/img/cockpit.jpg');
 }
 
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
 .bg-hero-light {
   background-image: url('/img/desktop-light.jpg');
+}
+
+.from-base-100 {
+  --tw-gradient-from: var(--fallback-b1,oklch(var(--b1)/1)) var(--tw-gradient-from-position);
+  --tw-gradient-to: var(--fallback-b1,oklch(var(--b1)/0)) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .from-indigo-500 {
   --tw-gradient-from: #6366f1 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(99 102 241 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-50\% {
+  --tw-gradient-from-position: 50%;
+}
+
+.via-primary {
+  --tw-gradient-to: var(--fallback-p,oklch(var(--p)/0))  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--fallback-p,oklch(var(--p)/1)) var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
 
 .via-purple-500 {
@@ -4055,6 +4016,10 @@ html {
 
 .to-pink-500 {
   --tw-gradient-to: #ec4899 var(--tw-gradient-to-position);
+}
+
+.to-secondary {
+  --tw-gradient-to: var(--fallback-s,oklch(var(--s)/1)) var(--tw-gradient-to-position);
 }
 
 .bg-cover {
@@ -4084,11 +4049,6 @@ html {
 
 .p-10 {
   padding: 2.5rem;
-}
-
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
 }
 
 .py-6 {
@@ -4311,14 +4271,6 @@ html {
 .transform {
   --webkit-transform: skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y));
   transform: skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y));
-}
-
-.fluid-xl {
-  font-size: clamp(1.4400rem, calc(0.3369vw + 1.3726rem), 1.7769rem);
-  letter-spacing: var(--fluid-letter-spacing);
-  --fluid-line-height: 1.35;
-  --fluid-letter-spacing: 0.0125em;
-  line-height: var(--fluid-line-height);
 }
 
 .fluid-3xl {
@@ -4575,43 +4527,8 @@ html {
   }
 }
 
-@media (min-width: 1280px) {
-  .xl\:card-side {
-    align-items: stretch;
-    flex-direction: row;
-  }
-
-  .xl\:card-side :where(figure:first-child) {
-    overflow: hidden;
-    border-start-start-radius: inherit;
-    border-start-end-radius: unset;
-    border-end-start-radius: inherit;
-    border-end-end-radius: unset;
-  }
-
-  .xl\:card-side :where(figure:last-child) {
-    overflow: hidden;
-    border-start-start-radius: unset;
-    border-start-end-radius: inherit;
-    border-end-start-radius: unset;
-    border-end-end-radius: inherit;
-  }
-
-  .xl\:card-side figure > * {
-    max-width: unset;
-  }
-
-  :where(.xl\:card-side figure > *) {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-}
-
-.focus\:outline-none:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
+.hover\:bg-gradient-to-r:hover {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
 :is([color-scheme="dark"] .dark\:bg-hero-dark) {
@@ -4619,6 +4536,10 @@ html {
 }
 
 @media (min-width: 640px) {
+  .sm\:h-full {
+    height: 100%;
+  }
+
   .sm\:w-96 {
     width: 24rem;
   }
@@ -4632,14 +4553,6 @@ html {
   .md\:h-full {
     height: 100%;
   }
-
-  .md\:max-w-3xl {
-    max-width: 48rem;
-  }
-
-  .md\:self-end {
-    align-self: flex-end;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -4649,28 +4562,6 @@ html {
 
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl\:h-full {
-    height: 100%;
-  }
-
-  .xl\:w-1\/2 {
-    width: 50%;
-  }
-
-  .xl\:w-2\/3 {
-    width: 66.666667%;
-  }
-
-  .xl\:max-w-3xl {
-    max-width: 48rem;
-  }
-
-  .xl\:self-end {
-    align-self: flex-end;
   }
 }
 
@@ -4691,10 +4582,4 @@ html {
 .\[\&\>div\]\:hover\:transform:hover>div {
   --webkit-transform: skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y));
   transform: skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y));
-}
-
-@media (min-width: 1280px) {
-  .\[\&_p\]\:xl\:w-2\/3 p {
-    width: 66.666667%;
-  }
 }
