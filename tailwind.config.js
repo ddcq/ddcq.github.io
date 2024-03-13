@@ -4,7 +4,6 @@ const fonts = {
   dark: "'Montserrat Variable', system-ui",
   synthwave: "'Courier Prime', monospace"
 }
-console.log(daisyThemes)
 const themes = {}
 for (themeName in daisyThemes) {
   let theme =  daisyThemes[themeName]
@@ -37,8 +36,8 @@ module.exports = {
     },
   },
   plugins: [
-    require('@tailwindcss/typography'),
     require('@xpd/tailwind-3dtransforms'),
+    require('@tailwindcss/typography'),
     require('daisyui'),
     require('tailwindcss-3d'),
     require("tailwind-fluid-typography"),
