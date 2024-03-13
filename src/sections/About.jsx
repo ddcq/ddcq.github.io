@@ -1,7 +1,7 @@
 export default function About() {
   return (
-    <section className="p-24 flex flex-col gap-8 w-full" id="about">
-      <div data-aos="fade-right" className="w-96 card glass shadow-xl card-side">
+    <section className="sm:p-24 flex flex-col gap-8 w-full" id="about">
+      <div data-aos="fade-right" className="w-full sm:w-96 card glass shadow-xl sm:card-side">
         <figure>
           <img src="img/ia/c.webp" className="h-full" />
         </figure>
@@ -10,7 +10,7 @@ export default function About() {
           le soucis d’un code clair, le plus optimisé possible et dimensionné au besoin.
         </div>
       </div>
-      <div data-aos="fade-left" className="self-end w-96 card card-side glass shadow-xl">
+      <div data-aos="fade-left" className="self-end w-full sm:w-96 card sm:card-side glass shadow-xl">
         <figure>
           <img src="img/ia/b.webp" className="h-full" />
         </figure>
@@ -19,7 +19,7 @@ export default function About() {
           la partie "Mainframe" qui dans beaucoup d’entreprises gardent encore le cœur du métier.
         </div>
       </div>
-      <div data-aos="fade-right" className="card card-side glass shadow-xl">
+      <div data-aos="fade-right" className="card sm:card-side glass shadow-xl xl:w-1/2">
         <figure>
           <img src="img/ia/a.webp" />
         </figure>
@@ -28,12 +28,12 @@ export default function About() {
           problèmes que connaît la production au quotidien.
         </div>
       </div>
-      <div data-aos="zoom-in-left" className="max-h-96 card shadow-xl image-full">
-        <figure>
-          <img src="img/ia/d.webp" className="min-w-full" />
+      <div data-aos="zoom-in-left" className="card md:card-side glass shadow-xl self-end max-w-3xl max-h-3xl">
+        <figure className="">
+          <img src="img/ia/d.webp" className="md:h-full"/>
         </figure>
         <div className="card-body">
-          <h2 className="card-title text-3xl">Ma vision</h2>
+          <h2 className="card-title fluid-3xl">Ma vision</h2>
           <p>
             Un informaticien diot pouvoir mesurer ses efforts. S’il veut pouvoir se concentrer pleinement sur du code à forte valeur ajoutée, il est
             indispensable que les tâches fastidieuses et répétitives lui prennent peu de temps et d’efforts. C’est dans cet esprit que les IDE progressent et
