@@ -781,6 +781,7 @@ html {
   --rounded-btn: 1.9rem;
   --tab-border: 2px;
   --tab-radius: 0.7rem;
+  font-family: Nothing You Could Do;
 }
 
 [data-theme=cyberpunk] {
@@ -3988,6 +3989,14 @@ html {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
+.bg-\[url\(\'\/img\/af\/avion1\.webp\'\)\] {
+  background-image: url('/img/af/avion1.webp');
+}
+
+.bg-\[url\(\'\/img\/af\/avion4\.webp\'\)\] {
+  background-image: url('/img/af/avion4.webp');
+}
+
 .from-base-100 {
   --tw-gradient-from: var(--fallback-b1,oklch(var(--b1)/1)) var(--tw-gradient-from-position);
   --tw-gradient-to: var(--fallback-b1,oklch(var(--b1)/0)) var(--tw-gradient-to-position);
@@ -4065,7 +4074,7 @@ html {
 }
 
 .font-title {
-  font-family: Nothing You Could Do;
+  font-family: Nothing You Could Do, cursive;
 }
 
 .text-2xl {

@@ -14,13 +14,16 @@ export default function AirFranceDeclic() {
         <h2 className="parallax-title">DECLIC</h2>
       </section>
       <ParallaxTitle title="Dématérialisation de la documentation aéronautique embarquée." subtitle="Ingénieur étude et développement" />
-      <section className="parallax-section parallax-image bg-[url('/img/af/avion1.jpg')]" />
+      <section className="parallax-section parallax-image bg-[url('/img/af/avion4.webp')]" />
       <section className="parallax-section parallax-article min-h-min">
         <h3 className="text-5xl">Description</h3>
         <p>
           Dans le cadre de l'arrivée de l'A380 et de son ordinateur embarqué, Air France met en place une suite de projet en vue de remplacé la documentation
           embarqué papier par leur pendant numérique.
         </p>
+        </section>
+        <section className="parallax-section parallax-image bg-[url('/img/af/avion1.webp')]" />
+        <section className="parallax-section parallax-article min-h-min">
         <h3 className="text-3xl">Tâches</h3>
         <ul>
           <li>Développement de la maquette dynamique (HTML/CSS/Javascript/Applet)</li>
