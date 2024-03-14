@@ -5,7 +5,6 @@ import '@fontsource/nothing-you-could-do'
 import 'aos/dist/aos.css'
 import type { Metadata } from 'next'
 import '../styles/globals.css'
-import '../styles/nothing.css'
 import { AOSInit } from './aos'
 
 export const metadata: Metadata = {
