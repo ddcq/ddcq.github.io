@@ -3916,6 +3916,18 @@ html {
   background-image: url('/img/af/a380.webp');
 }
 
+.bg-\[url\(\'\/img\/af\/avion1\.jpg\'\)\] {
+  background-image: url('/img/af/avion1.jpg');
+}
+
+.bg-\[url\(\'\/img\/af\/avion2\.jpg\'\)\] {
+  background-image: url('/img/af/avion2.jpg');
+}
+
+.bg-\[url\(\'\/img\/af\/avion3\.jpg\'\)\] {
+  background-image: url('/img/af/avion3.jpg');
+}
+
 .bg-\[url\(\'\/img\/ca\/ca\.jpg\'\)\] {
   background-image: url('/img/ca/ca.jpg');
 }
@@ -3944,6 +3956,14 @@ html {
   background-image: url('/img/ca/virtualization.jpg');
 }
 
+.bg-\[url\(\'\/img\/cockpit\.jpg\'\)\] {
+  background-image: url('/img/cockpit.jpg');
+}
+
+.bg-\[url\(\'\/img\/desktop-light\.jpg\'\)\] {
+  background-image: url('/img/desktop-light.jpg');
+}
+
 .bg-\[url\(\'\/img\/ev\/a\.jpg\'\)\] {
   background-image: url('/img/ev/a.jpg');
 }
@@ -3964,28 +3984,8 @@ html {
   background-image: url('/img/keys.jpg');
 }
 
-.bg-af1 {
-  background-image: url('/img/af/avion1.jpg');
-}
-
-.bg-af2 {
-  background-image: url('/img/af/avion2.jpg');
-}
-
-.bg-af3 {
-  background-image: url('/img/af/avion3.jpg');
-}
-
-.bg-cockpit {
-  background-image: url('/img/cockpit.jpg');
-}
-
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.bg-hero-light {
-  background-image: url('/img/desktop-light.jpg');
 }
 
 .from-base-100 {
@@ -4531,7 +4531,7 @@ html {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
-:is([color-scheme="dark"] .dark\:bg-hero-dark) {
+:is([color-scheme="dark"] .dark\:bg-\[url\(\'\/img\/clavier\.jpg\'\)\]) {
   background-image: url('/img/clavier.jpg');
 }
 
