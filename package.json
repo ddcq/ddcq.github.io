@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.10",
-    "@types/node": "20.11.5",
+    "@types/node": "^20.11.27",
     "@types/react": "18.2.48",
     "@xpd/tailwind-3dtransforms": "^1.0.3",
     "autoprefixer": "^10.4.15",
