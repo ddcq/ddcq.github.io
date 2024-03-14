@@ -41,7 +41,7 @@ export default function Header() {
 
       <div className="navbar-end">
         {themes.map(([mode, themesByMode]) => (
-          <div class="dropdown">
+          <div className="dropdown">
             <button className="m-1 btn rounded-box btn-neutral">Themes {mode}</button>
             <div className="shadow menu dropdown-content z-[1] rounded-box w-52 max-h-50vh">
               <ul>

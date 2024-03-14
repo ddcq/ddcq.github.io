@@ -9,12 +9,12 @@ export default function AirFranceDeclic() {
   return (
     <div className="parallax-group">
       <Breadcrumbs breadcrumbs="✈️ Air France|📁 Declic" />
-      <section className="parallax-section parallax-image bg-cockpit" />
+      <section className="parallax-section parallax-image bg-[url('/img/cockpit.jpg')]" />
       <section className="parallax-heading">
         <h2 className="parallax-title">DECLIC</h2>
       </section>
       <ParallaxTitle title="Dématérialisation de la documentation aéronautique embarquée." subtitle="Ingénieur étude et développement" />
-      <section className="parallax-section parallax-image bg-af1" />
+      <section className="parallax-section parallax-image bg-[url('/img/af/avion1.jpg')]" />
       <section className="parallax-section parallax-article min-h-min">
         <h3 className="text-5xl">Description</h3>
         <p>
@@ -30,7 +30,7 @@ export default function AirFranceDeclic() {
           <li>Liaison technique entre Air France et l’éditeur du visualiseur PDF (Jpedal)</li>
         </ul>
       </section>
-      <section className="parallax-section parallax-image bg-af2" />
+      <section className="parallax-section parallax-image bg-[url('/img/af/avion2.jpg')]" />
       <section className="parallax-section parallax-article">
         <h3 className="text-3xl">Technologies</h3>
         <ul>
@@ -42,7 +42,7 @@ export default function AirFranceDeclic() {
           <li>JMX</li>
         </ul>
       </section>
-      <section className="parallax-section parallax-image bg-af3" />
+      <section className="parallax-section parallax-image bg-[url('/img/af/avion3.jpg')]" />
       <section className="parallax-section parallax-article">
         <h3 className="text-3xl">&Eacute;quipe</h3>
         <ul>
