@@ -3774,6 +3774,10 @@ html {
   display: grid;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-36 {
   height: 9rem;
 }
@@ -3879,6 +3883,14 @@ html {
   border-radius: 0.75rem;
 }
 
+.rounded-btn {
+  border-radius: var(--rounded-btn, 0.5rem);
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .bg-base-100 {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
@@ -3917,8 +3929,8 @@ html {
   background-image: url('/img/af/a380.webp');
 }
 
-.bg-\[url\(\'\/img\/af\/avion1\.jpg\'\)\] {
-  background-image: url('/img/af/avion1.jpg');
+.bg-\[url\(\'\/img\/af\/avion1\.webp\'\)\] {
+  background-image: url('/img/af/avion1.webp');
 }
 
 .bg-\[url\(\'\/img\/af\/avion2\.jpg\'\)\] {
@@ -3927,6 +3939,10 @@ html {
 
 .bg-\[url\(\'\/img\/af\/avion3\.jpg\'\)\] {
   background-image: url('/img/af/avion3.jpg');
+}
+
+.bg-\[url\(\'\/img\/af\/avion4\.webp\'\)\] {
+  background-image: url('/img/af/avion4.webp');
 }
 
 .bg-\[url\(\'\/img\/ca\/ca\.jpg\'\)\] {
@@ -3989,14 +4005,6 @@ html {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
-.bg-\[url\(\'\/img\/af\/avion1\.webp\'\)\] {
-  background-image: url('/img/af/avion1.webp');
-}
-
-.bg-\[url\(\'\/img\/af\/avion4\.webp\'\)\] {
-  background-image: url('/img/af/avion4.webp');
-}
-
 .from-base-100 {
   --tw-gradient-from: var(--fallback-b1,oklch(var(--b1)/1)) var(--tw-gradient-from-position);
   --tw-gradient-to: var(--fallback-b1,oklch(var(--b1)/0)) var(--tw-gradient-to-position);
@@ -4045,6 +4053,10 @@ html {
 
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+
+.fill-neutral-50 {
+  fill: #fafafa;
 }
 
 .object-cover {
@@ -4545,6 +4557,14 @@ html {
 }
 
 @media (min-width: 640px) {
+  .sm\:block {
+    display: block;
+  }
+
+  .sm\:hidden {
+    display: none;
+  }
+
   .sm\:h-full {
     height: 100%;
   }

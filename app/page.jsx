@@ -14,10 +14,10 @@ export default function Home() {
       <Header />
       <Presentation />
       <Skills />
-      <About />
       <Society />
       <Education />
       <Portfolio />
+      <About />
       <Footer />
     </>
   )
