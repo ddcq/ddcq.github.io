@@ -44,7 +44,7 @@ export default function Header() {
           <div className="dropdown">
             <button className="m-1 btn rounded-btn btn-neutral hidden sm:block">Themes {mode}</button>
             <button className="m-1 btn rounded-full btn-neutral sm:hidden">
-              <svg enable-background="new 0 0 512 512" height="24px" version="1" viewBox="0 0 512 512" width="24px" className="fill-neutral-50">
+              <svg enableBackground="new 0 0 512 512" height="24px" version="1" viewBox="0 0 512 512" width="24px" className="fill-neutral-50">
                 {mode === 'dark' ? (
                   <path d="M350,343c-50,50-131,50-181,0c-50-50-50-131,0-181c13-13,29-23,48-30c6-2,12-0,16,4c4,4,6,10.833,4,17c-13,35-4,74,22,100c26,26,65,35,100,22c6-2,12-0.582,17,4c4,4,6,10.812,4,17C373,314,363,330,350,343z M191,185c-37,37-37,98,0,136c40,40,108,36,143-8c-36,2-71-10.729-98-37c-26-26-39-62-37-98C197,180,194,182,191,185z" />
                 ) : (

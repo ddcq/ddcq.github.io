@@ -1,4 +1,4 @@
-import { cx } from 'class-variance-authority'
+import cx from '../utils/classnames'
 import React from 'react'
 
 const cardCx =

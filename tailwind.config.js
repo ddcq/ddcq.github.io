@@ -25,11 +25,11 @@ module.exports = {
     },
   },
   plugins: [
-    require('@xpd/tailwind-3dtransforms'),
     require('@tailwindcss/typography'),
     require('daisyui'),
-    require('tailwindcss-3d'),
+//    require('tailwindcss-3d'),
     require('tailwind-fluid-typography'),
+    require('@xpd/tailwind-3dtransforms'),
   ],
   daisyui: {
     styled: true,

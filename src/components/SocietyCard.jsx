@@ -1,6 +1,6 @@
 'use client'
 
-import { cx } from 'class-variance-authority'
+import cx from '../utils/classnames'
 import { useInView } from 'react-intersection-observer'
 
 export default function SocietyCard({ img, society, group, period }) {
