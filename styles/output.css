@@ -3719,6 +3719,10 @@ html {
   position: sticky;
 }
 
+.inset-0 {
+  inset: 0px;
+}
+
 .top-0 {
   top: 0px;
 }
@@ -3733,6 +3737,10 @@ html {
 
 .z-\[1\] {
   z-index: 1;
+}
+
+.z-20 {
+  z-index: 20;
 }
 
 .m-1 {
@@ -3788,13 +3796,16 @@ html {
   height: 100%;
 }
 
-.min-h-min {
-  min-height: -moz-min-content;
-  min-height: min-content;
+.h-screen {
+  height: 100vh;
 }
 
 .min-h-screen {
   min-height: 100vh;
+}
+
+.min-h-96 {
+  min-height: 24rem;
 }
 
 .w-5 {
@@ -3815,6 +3826,10 @@ html {
 
 .w-full {
   width: 100%;
+}
+
+.w-screen {
+  width: 100vw;
 }
 
 .max-w-2xl {
@@ -3848,6 +3863,10 @@ html {
 
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.list-disc {
+  list-style-type: disc;
 }
 
 .grid-cols-3 {
@@ -3884,6 +3903,12 @@ html {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-vw-4-min\@sm-max\@lg {
+  gap: clamp(
+                0.5rem, 1.25vw, 0.8rem
+              );
 }
 
 .self-end {
@@ -3936,28 +3961,17 @@ html {
   background-color: var(--fallback-s,oklch(var(--s)/var(--tw-bg-opacity)));
 }
 
+.bg-secondary\/30 {
+  background-color: var(--fallback-s,oklch(var(--s)/0.3));
+}
+
+.bg-slate-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+}
+
 .bg-transparent {
   background-color: transparent;
-}
-
-.bg-\[url\(\'\/img\/af\/a380\.webp\'\)\] {
-  background-image: url('/img/af/a380.webp');
-}
-
-.bg-\[url\(\'\/img\/af\/avion1\.webp\'\)\] {
-  background-image: url('/img/af/avion1.webp');
-}
-
-.bg-\[url\(\'\/img\/af\/avion2\.jpg\'\)\] {
-  background-image: url('/img/af/avion2.jpg');
-}
-
-.bg-\[url\(\'\/img\/af\/avion3\.jpg\'\)\] {
-  background-image: url('/img/af/avion3.jpg');
-}
-
-.bg-\[url\(\'\/img\/af\/avion4\.webp\'\)\] {
-  background-image: url('/img/af/avion4.webp');
 }
 
 .bg-\[url\(\'\/img\/ca\/ca\.jpg\'\)\] {
@@ -3986,10 +4000,6 @@ html {
 
 .bg-\[url\(\'\/img\/ca\/virtualization\.jpg\'\)\] {
   background-image: url('/img/ca/virtualization.jpg');
-}
-
-.bg-\[url\(\'\/img\/cockpit\.jpg\'\)\] {
-  background-image: url('/img/cockpit.jpg');
 }
 
 .bg-\[url\(\'\/img\/desktop-light\.jpg\'\)\] {
@@ -4087,6 +4097,28 @@ html {
   padding: 2.5rem;
 }
 
+.p-vw-3 {
+  padding: 0.9375vw;
+}
+
+.p-vw-8 {
+  padding: 2.5vw;
+}
+
+.p-vw-16 {
+  padding: 5vw;
+}
+
+.p-vw-16-min\@sm-max\@xl {
+  padding: clamp(
+                2rem, 5vw, 4rem
+              );
+}
+
+.p-vw-32 {
+  padding: 10vw;
+}
+
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -4119,18 +4151,26 @@ html {
   line-height: 2.5rem;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
-
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
 
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
+}
+
 .font-black {
   font-weight: 900;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-thin {
+  font-weight: 100;
 }
 
 .italic {
@@ -4167,12 +4207,26 @@ html {
   color: var(--fallback-sc,oklch(var(--sc)/var(--tw-text-opacity)));
 }
 
+.text-slate-100 {
+  --tw-text-opacity: 1;
+  color: rgb(241 245 249 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .opacity-0 {
   opacity: 0;
 }
 
 .opacity-80 {
   opacity: 0.8;
+}
+
+.opacity-90 {
+  opacity: 0.9;
 }
 
 .shadow {
@@ -4193,6 +4247,12 @@ html {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.backdrop-blur-sm {
+  --tw-backdrop-blur: blur(4px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -4201,6 +4261,14 @@ html {
 
 .transition-transform {
   transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -4253,11 +4321,27 @@ html {
   line-height: var(--fluid-line-height);
 }
 
+.fluid-5xl {
+  font-size: clamp(2.9860rem, calc(2.6242vw + 2.4611rem), 5.6102rem);
+  letter-spacing: var(--fluid-letter-spacing);
+  --fluid-line-height: 1.35;
+  --fluid-letter-spacing: -0.0083333333em;
+  line-height: var(--fluid-line-height);
+}
+
 .fluid-6xl {
   font-size: clamp(3.5832rem, calc(3.8953vw + 2.8041rem), 7.4784rem);
   letter-spacing: var(--fluid-letter-spacing);
   --fluid-line-height: 1.35;
   --fluid-letter-spacing: -0.015625em;
+  line-height: var(--fluid-line-height);
+}
+
+.fluid-8xl {
+  font-size: clamp(5.1598rem, calc(8.1286vw + 3.5341rem), 13.2884rem);
+  letter-spacing: var(--fluid-letter-spacing);
+  --fluid-line-height: 1.35;
+  --fluid-letter-spacing: -0.03125em;
   line-height: var(--fluid-line-height);
 }
 

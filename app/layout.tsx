@@ -6,6 +6,7 @@ import 'aos/dist/aos.css'
 import type { Metadata } from 'next'
 import '../styles/globals.css'
 import { AOSInit } from './aos'
+import Providers from './providers'
 
 export const metadata: Metadata = {
   title: 'CV - Denis Declercq',
@@ -18,7 +19,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <AOSInit />
-      <body className="bg-base-100 text-base-content">{children}</body>
+      <body className="bg-base-100 text-base-content">
+        <Providers>{children}</Providers>
+      </body>
     </html>
   )
 }

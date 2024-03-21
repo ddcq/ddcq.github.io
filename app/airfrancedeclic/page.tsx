@@ -2,40 +2,64 @@
 
 import { useTheme } from '../../src/hooks/useTheme'
 import Breadcrumbs from '../../src/components/Breadcrumbs'
-import { ParallaxTitle } from '../../src/components/ParallaxTitle'
+import { Parallax, ParallaxBanner, ParallaxBannerLayer } from 'react-scroll-parallax'
+import { PropsWithChildren } from 'react'
+import cx from '../../src/utils/classnames'
+
+function Image({ url }: { url: string }) {
+  return <ParallaxBanner layers={[{ image: url, speed: -50 }]} className="h-screen" />
+}
+function Text({ children, title, className }: PropsWithChildren<{ title?: string; className?: string }>) {
+  return (
+    <Parallax
+      translateY={['0%', '-100%']}
+      className={cx('absolute bg-slate-50 z-20 w-screen fluid-md flex flex-col gap-vw-4-min@sm-max@lg opacity-90 p-vw-16-min@sm-max@xl', className)}
+    >
+      {title && <h2 className="fluid-3xl">{title}</h2>}
+      {children}
+    </Parallax>
+  )
+}
 
 export default function AirFranceDeclic() {
   useTheme()
   return (
-    <div className="parallax-group">
+    <>
       <Breadcrumbs breadcrumbs="✈️ Air France|📁 Declic" />
-      <section className="parallax-section parallax-image bg-[url('/img/cockpit.jpg')]" />
-      <section className="parallax-heading">
-        <h2 className="parallax-title">DECLIC</h2>
-      </section>
-      <ParallaxTitle title="Dématérialisation de la documentation aéronautique embarquée." subtitle="Ingénieur étude et développement" />
-      <section className="parallax-section parallax-image bg-[url('/img/af/avion4.webp')]" />
-      <section className="parallax-section parallax-article min-h-min">
-        <h3 className="text-5xl">Description</h3>
-        <p>
-          Dans le cadre de l'arrivée de l'A380 et de son ordinateur embarqué, Air France met en place une suite de projet en vue de remplacé la documentation
-          embarqué papier par leur pendant numérique.
-        </p>
-        </section>
-        <section className="parallax-section parallax-image bg-[url('/img/af/avion1.webp')]" />
-        <section className="parallax-section parallax-article min-h-min">
-        <h3 className="text-3xl">Tâches</h3>
-        <ul>
+      <ParallaxBanner className="h-screen">
+        <ParallaxBannerLayer image="/img/cockpit.jpg" />
+        <div className="absolute inset-0 flex items-center justify-center">
+          <h1 className="text-8xl text-white font-thin">DECLIC</h1>
+        </div>
+      </ParallaxBanner>
+      <Text>
+        <h3 className="fluid-4xl text-center">Dématérialisation de la documentation aéronautique embarquée.</h3>
+        <p className="fluid-3xl text-center">Ingénieur étude et développement</p>
+      </Text>
+      <Image url="/img/af/avion4.webp" />
+      <Text title="Description">
+        Dans le cadre de l'arrivée de l'A380 et de son ordinateur embarqué, Air France met en place une suite de projet en vue de remplacer la documentation
+        embarquée papier par leur pendant numérique. En effet, les compagnies aériennes comme Air France utilisent de plus en plus des Electronic Flight Bags
+        (EFB), qui sont des dispositifs électroniques qui permettent aux équipages de vol de consulter numériquement le contenu qui était traditionnellement
+        imprimé, y compris les manuels de vol, les cartes de navigation, et d'autres documents nécessaires pour le vol. Les EFB peuvent être portables ou
+        installés à bord de l'avion. Il est courant dans l'industrie aéronautique de passer à des solutions numériques pour améliorer l'efficacité et réduire
+        les coûts. La transition vers des documents numériques offre plusieurs avantages, tels que la réduction du poids (moins de papier signifie moins de
+        carburant brûlé), la facilité de mise à jour des documents, et l'amélioration de l'accessibilité pour les équipages. Le but de ce projet est de
+        développer la future solution de consultation de documentation numérique qui sera installée sur l'ordinateur de bord de l'A380 ainsi que sur des
+        ordinateurs portables sécurisés.
+      </Text>
+      <Image url="/img/af/avion1.webp" />
+      <Text title="Tâches">
+        <ul className="list-disc">
           <li>Développement de la maquette dynamique (HTML/CSS/Javascript/Applet)</li>
           <li>Rédaction du MCD et des spécifications fonctionnelles et détaillées</li>
           <li>Développement de l'application (WSAD, Struts, Ajax, Tomcat, IMS Connect, Derby)</li>
           <li>Rédaction du guide d'exploitation</li>
           <li>Liaison technique entre Air France et l’éditeur du visualiseur PDF (Jpedal)</li>
         </ul>
-      </section>
-      <section className="parallax-section parallax-image bg-[url('/img/af/avion2.jpg')]" />
-      <section className="parallax-section parallax-article">
-        <h3 className="text-3xl">Technologies</h3>
+      </Text>
+      <Image url="/img/af/avion2.jpg" />
+      <Text title="Technologies">
         <ul>
           <li>Java</li>
           <li>Struts</li>
@@ -44,32 +68,30 @@ export default function AirFranceDeclic() {
           <li>IMS Connect</li>
           <li>JMX</li>
         </ul>
-      </section>
-      <section className="parallax-section parallax-image bg-[url('/img/af/avion3.jpg')]" />
-      <section className="parallax-section parallax-article">
-        <h3 className="text-3xl">&Eacute;quipe</h3>
+      </Text>
+      <Image url="/img/af/avion3.jpg" />
+      <Text title="&Eacute;quipe">
         <ul>
           <li>Un chef de projet</li>
           <li>Un Développeur</li>
           <li>Un lead developpeur</li>
           <li>une AMOA</li>
         </ul>
-      </section>
-      <section className="parallax-section parallax-image bg-[url('/img/af/a380.webp')]" />
-      <section className="parallax-section parallax-article">
+      </Text>
+      <Image url="/img/af/a380.webp" />
+      <Text>
         <ul>
           <li>
             Client : <strong>AIR FRANCE</strong>
           </li>
           <li>
-            Contexte :
-            <strong>Secteur Transport / Maintenance Applicative</strong>
+            Contexte : <strong>Secteur Transport / Maintenance Applicative</strong>
           </li>
           <li>
             Date : <strong>Septembre 2004 - mars 2007</strong>
           </li>
         </ul>
-      </section>
-    </div>
+      </Text>
+    </>
   )
 }

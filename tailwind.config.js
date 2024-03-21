@@ -10,7 +10,6 @@ for (themeName in daisyThemes) {
   let theme = daisyThemes[themeName]
   if (fonts[themeName]) {
     theme = { ...theme, fontFamily: fonts[themeName] }
-    console.log(themeName, theme)
   }
   themes[themeName] = theme
 }
@@ -29,6 +28,7 @@ module.exports = {
     require('daisyui'),
 //    require('tailwindcss-3d'),
     require('tailwind-fluid-typography'),
+    require('tailwindcss-fluid-spacing'),
     require('@xpd/tailwind-3dtransforms'),
   ],
   daisyui: {
