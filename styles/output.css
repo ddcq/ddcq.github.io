@@ -3974,6 +3974,15 @@ html {
   background-color: transparent;
 }
 
+.bg-current {
+  background-color: currentColor;
+}
+
+.bg-base-200 {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-bg-opacity)));
+}
+
 .bg-\[url\(\'\/img\/ca\/ca\.jpg\'\)\] {
   background-image: url('/img/ca/ca.jpg');
 }
