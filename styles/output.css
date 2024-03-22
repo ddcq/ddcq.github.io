@@ -3768,10 +3768,6 @@ html {
   display: flex;
 }
 
-.grid {
-  display: grid;
-}
-
 .hidden {
   display: none;
 }
@@ -3861,12 +3857,12 @@ html {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.list-disc {
-  list-style-type: disc;
+.scroll-m-28 {
+  scroll-margin: 7rem;
 }
 
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+.list-disc {
+  list-style-type: disc;
 }
 
 .flex-col {
@@ -3891,10 +3887,6 @@ html {
 
 .justify-around {
   justify-content: space-around;
-}
-
-.gap-3 {
-  gap: 0.75rem;
 }
 
 .gap-8 {
@@ -3937,6 +3929,10 @@ html {
   background-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-bg-opacity)));
 }
 
+.bg-base-200\/50 {
+  background-color: var(--fallback-b2,oklch(var(--b2)/0.5));
+}
+
 .bg-base-300 {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-b3,oklch(var(--b3)/var(--tw-bg-opacity)));
@@ -3966,56 +3962,8 @@ html {
   background-color: transparent;
 }
 
-.bg-\[url\(\'\/img\/ca\/ca\.jpg\'\)\] {
-  background-image: url('/img/ca/ca.jpg');
-}
-
-.bg-\[url\(\'\/img\/ca\/credit_agricole\.jpg\'\)\] {
-  background-image: url('/img/ca/credit_agricole.jpg');
-}
-
-.bg-\[url\(\'\/img\/ca\/keys2\.jpg\'\)\] {
-  background-image: url('/img/ca/keys2.jpg');
-}
-
-.bg-\[url\(\'\/img\/ca\/labyrinth\.jpg\'\)\] {
-  background-image: url('/img/ca/labyrinth.jpg');
-}
-
-.bg-\[url\(\'\/img\/ca\/rack\.jpg\'\)\] {
-  background-image: url('/img/ca/rack.jpg');
-}
-
-.bg-\[url\(\'\/img\/ca\/verre\.jpg\'\)\] {
-  background-image: url('/img/ca/verre.jpg');
-}
-
-.bg-\[url\(\'\/img\/ca\/virtualization\.jpg\'\)\] {
-  background-image: url('/img/ca/virtualization.jpg');
-}
-
 .bg-\[url\(\'\/img\/desktop-light\.jpg\'\)\] {
   background-image: url('/img/desktop-light.jpg');
-}
-
-.bg-\[url\(\'\/img\/ev\/a\.jpg\'\)\] {
-  background-image: url('/img/ev/a.jpg');
-}
-
-.bg-\[url\(\'\/img\/ev\/c\.jpg\'\)\] {
-  background-image: url('/img/ev/c.jpg');
-}
-
-.bg-\[url\(\'\/img\/ev\/e\.jpg\'\)\] {
-  background-image: url('/img/ev/e.jpg');
-}
-
-.bg-\[url\(\'\/img\/ev\/f\.jpg\'\)\] {
-  background-image: url('/img/ev/f.jpg');
-}
-
-.bg-\[url\(\'\/img\/keys\.jpg\'\)\] {
-  background-image: url('/img/keys.jpg');
 }
 
 .bg-gradient-to-r {
@@ -4060,6 +4008,14 @@ html {
   background-size: cover;
 }
 
+.bg-contain {
+  background-size: contain;
+}
+
+.\!bg-contain {
+  background-size: contain !important;
+}
+
 .bg-fixed {
   background-attachment: fixed;
 }
@@ -4100,6 +4056,44 @@ html {
   padding-bottom: 1.5rem;
 }
 
+.py-vw-2-min\@sm-max\@xl {
+  padding-top: clamp(
+                0.25rem, 0.625vw, 0.5rem
+              );
+  padding-bottom: clamp(
+                0.25rem, 0.625vw, 0.5rem
+              );
+}
+
+.py-vw-8-min\@sm-max\@xl {
+  padding-top: clamp(
+                1rem, 2.5vw, 2rem
+              );
+  padding-bottom: clamp(
+                1rem, 2.5vw, 2rem
+              );
+}
+
+.py-vw-8-min\@md-max\@xl {
+  padding-top: clamp(
+                1.2rem, 2.5vw, 2rem
+              );
+  padding-bottom: clamp(
+                1.2rem, 2.5vw, 2rem
+              );
+}
+
+.py-vw-2-min\@lg {
+  padding-top: max(0.625vw, 0.4rem);
+  padding-bottom: max(0.625vw, 0.4rem);
+}
+
+.pl-vw-20-min\@md-max\@2xl {
+  padding-left: clamp(
+                3rem, 6.25vw, 6rem
+              );
+}
+
 .text-left {
   text-align: left;
 }
@@ -4125,11 +4119,6 @@ html {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
-}
-
-.text-8xl {
-  font-size: 6rem;
-  line-height: 1;
 }
 
 .text-sm {
@@ -4287,6 +4276,14 @@ html {
   letter-spacing: var(--fluid-letter-spacing);
   --fluid-line-height: 1.35;
   --fluid-letter-spacing: -0.015625em;
+  line-height: var(--fluid-line-height);
+}
+
+.fluid-8xl {
+  font-size: clamp(5.1598rem, calc(8.1286vw + 3.5341rem), 13.2884rem);
+  letter-spacing: var(--fluid-letter-spacing);
+  --fluid-line-height: 1.35;
+  --fluid-letter-spacing: -0.03125em;
   line-height: var(--fluid-line-height);
 }
 
@@ -4612,4 +4609,9 @@ html {
 
 .\[\&\>div\]\:hover\:transform:hover>div {
   transform: translate3d(var(--tw-translate-x), var(--tw-translate-y), var(--tw-translate-z)) rotateX(var(--tw-rotate-x)) rotateY(var(--tw-rotate-y)) rotateZ(var(--tw-rotate)) rotate3d(var(--tw-rotate-3d)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scale3d(var(--tw-scale-x),var(--tw-scale-y),var(--tw-scale-z)) !important;
+}
+
+.\[\&\>li\]\:py-vw-2>li {
+  padding-top: 0.625vw;
+  padding-bottom: 0.625vw;
 }

@@ -3,7 +3,7 @@ import { Parallax, ParallaxBanner, ParallaxBannerLayer } from 'react-scroll-para
 import cx from '@/utils/classnames'
 
 export function Image({ url }: { url: string }) {
-  return <ParallaxBanner layers={[{ image: url, speed: -50 }]} className="h-screen" />
+  return <ParallaxBanner layers={[{ image: url, speed: -50, expanded: false }]} className="h-screen" />
 }
 
 export function Text({ children, title, className }: PropsWithChildren<{ title?: string; className?: string }>) {
@@ -22,8 +22,8 @@ export function Banner({ children, image }: PropsWithChildren<{ image: string }>
   return (
     <ParallaxBanner className="h-screen">
       <ParallaxBannerLayer image={image} />
-      <div className="absolute inset-0 flex items-center justify-center">
-        <h1 className="text-8xl text-white font-thin">{children}</h1>
+      <div className="absolute inset-0 flex items-center">
+        <h1 className="fluid-8xl text-white font-thin w-screen bg-base-200/50 text-center">{children}</h1>
       </div>
     </ParallaxBanner>
   )
