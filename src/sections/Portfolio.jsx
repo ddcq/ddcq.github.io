@@ -32,9 +32,9 @@ export default function Portfolio() {
         <MissionCard
           img="img/keys.jpg"
           society="Crédit Agricole"
-          project="GreenWeb"
-          description="Migration du logiciel de Crédit"
-          path="/cagreenweb"
+          project="Alphée"
+          description="Maintenance application de la plateforme"
+          path="/caalphee"
         />
         <MissionCard
           img="img/cockpit.jpg"

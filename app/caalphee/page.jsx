@@ -4,11 +4,11 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import { useTheme } from '@/hooks/useTheme'
 import { Banner, Image, Text } from '@/components/Parallax'
 
-export default function CreditAgricoleGreenWeb() {
+export default function CreditAgricoleAlphee() {
   useTheme()
   return (
     <>
-      <Breadcrumbs breadcrumbs="🏦 Crédit Agricole|💸 GreenWeb" />
+      <Breadcrumbs breadcrumbs="🏦 Crédit Agricole|💸 Alphée" />
       <Banner image="/img/keys.jpg">Alphée</Banner>
       <Text>
         <h3 className="fluid-4xl text-center">Maintenance Applicative</h3>
