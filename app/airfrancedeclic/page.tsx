@@ -3,19 +3,14 @@
 import { useTheme } from '@/hooks/useTheme'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import { ParallaxBanner, ParallaxBannerLayer } from 'react-scroll-parallax'
-import { Image, Text } from '@/components/Parallax'
+import { Banner, Image, Text } from '@/components/Parallax'
 
 export default function AirFranceDeclic() {
   useTheme()
   return (
     <>
       <Breadcrumbs breadcrumbs="✈️ Air France|📁 Declic" />
-      <ParallaxBanner className="h-screen">
-        <ParallaxBannerLayer image="/img/cockpit.jpg" />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <h1 className="text-8xl text-white font-thin">DECLIC</h1>
-        </div>
-      </ParallaxBanner>
+      <Banner image="/img/cockpit.jpg" >DECLIC</Banner>
       <Text>
         <h3 className="fluid-4xl text-center">Dématérialisation de la documentation aéronautique embarquée.</h3>
         <p className="fluid-3xl text-center">Ingénieur étude et développement</p>

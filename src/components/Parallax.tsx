@@ -1,5 +1,5 @@
 import { PropsWithChildren } from 'react'
-import { Parallax, ParallaxBanner } from 'react-scroll-parallax'
+import { Parallax, ParallaxBanner, ParallaxBannerLayer } from 'react-scroll-parallax'
 import cx from '@/utils/classnames'
 
 export function Image({ url }: { url: string }) {
@@ -15,5 +15,16 @@ export function Text({ children, title, className }: PropsWithChildren<{ title?:
       {title && <h2 className="fluid-3xl">{title}</h2>}
       {children}
     </Parallax>
+  )
+}
+
+export function Banner({ children, image }: PropsWithChildren<{ image: string }>) {
+  return (
+    <ParallaxBanner className="h-screen">
+      <ParallaxBannerLayer image={image} />
+      <div className="absolute inset-0 flex items-center justify-center">
+        <h1 className="text-8xl text-white font-thin">{children}</h1>
+      </div>
+    </ParallaxBanner>
   )
 }
