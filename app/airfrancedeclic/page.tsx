@@ -1,25 +1,9 @@
 'use client'
 
-import { useTheme } from '../../src/hooks/useTheme'
-import Breadcrumbs from '../../src/components/Breadcrumbs'
-import { Parallax, ParallaxBanner, ParallaxBannerLayer } from 'react-scroll-parallax'
-import { PropsWithChildren } from 'react'
-import cx from '../../src/utils/classnames'
-
-function Image({ url }: { url: string }) {
-  return <ParallaxBanner layers={[{ image: url, speed: -50 }]} className="h-screen" />
-}
-function Text({ children, title, className }: PropsWithChildren<{ title?: string; className?: string }>) {
-  return (
-    <Parallax
-      translateY={['0%', '-100%']}
-      className={cx('absolute bg-base-200 z-20 w-screen fluid-md flex flex-col gap-vw-4-min@sm-max@lg opacity-90 p-vw-16-min@sm-max@xl', className)}
-    >
-      {title && <h2 className="fluid-3xl">{title}</h2>}
-      {children}
-    </Parallax>
-  )
-}
+import { useTheme } from '@/hooks/useTheme'
+import Breadcrumbs from '@/components/Breadcrumbs'
+import { ParallaxBanner, ParallaxBannerLayer } from 'react-scroll-parallax'
+import { Image, Text } from '@/components/Parallax'
 
 export default function AirFranceDeclic() {
   useTheme()
