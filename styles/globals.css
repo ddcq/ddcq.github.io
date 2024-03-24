@@ -33,3 +33,44 @@
   @apply font-bold text-center text-slate-100 backdrop-blur-sm bg-secondary/30;
   font-size: clamp(1rem, -0.5rem + 8vw, 6rem);
 }
+
+.heart {
+  animation-name: radiate;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  animation-fill-mode: backwards;
+}
+
+
+.heart:nth-child(1) {
+  animation-delay: -5s;
+}
+.heart:nth-child(2) {
+  animation-delay: -10s;
+}
+.heart:nth-child(3) {
+  animation-delay: -15s;
+}
+.heart:nth-child(4) {
+  animation-delay: -20s;
+}
+.heart:nth-child(5) {
+  animation-delay: -25s;
+}
+
+@keyframes radiate {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  1% {
+    opacity: 0.15;
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(2);
+  }
+}

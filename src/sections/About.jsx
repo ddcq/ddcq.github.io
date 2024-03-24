@@ -1,3 +1,5 @@
+import { Parallax } from 'react-scroll-parallax'
+
 export default function About() {
   return (
     <section className="sm:p-24 flex flex-col gap-8 w-full" id="about">
@@ -30,7 +32,7 @@ export default function About() {
       </div>
       <div data-aos="zoom-in-left" className="card md:card-side glass shadow-xl self-end max-w-3xl max-h-3xl">
         <figure className="">
-          <img src="img/ia/d.webp" className="md:h-full"/>
+          <img src="img/ia/d.webp" className="md:h-full" />
         </figure>
         <div className="card-body">
           <h2 className="card-title fluid-3xl">Ma vision</h2>

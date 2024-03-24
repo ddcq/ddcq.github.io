@@ -7,10 +7,14 @@ import Portfolio from '../src/sections/Portfolio'
 import Footer from '../src/sections/Footer'
 import Society from '../src/sections/Society'
 import Education from '../src/sections/Education'
+import Hearts from '@/components/Hearts'
+import { useReadLocalStorage } from 'usehooks-ts'
 
 export default function Home() {
+  const theme = useReadLocalStorage('theme');
   return (
     <>
+      {theme === 'valentine' && <Hearts/>}
       <Header />
       <Presentation />
       <Skills />

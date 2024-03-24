@@ -3707,6 +3707,10 @@ html {
   border-end-end-radius: 0px;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -3721,6 +3725,10 @@ html {
 
 .inset-0 {
   inset: 0px;
+}
+
+.left-0 {
+  left: 0px;
 }
 
 .top-0 {
@@ -3741,6 +3749,18 @@ html {
 
 .z-\[1\] {
   z-index: 1;
+}
+
+.-z-0 {
+  z-index: 0;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .m-1 {
@@ -3786,6 +3806,10 @@ html {
 
 .h-96 {
   height: 24rem;
+}
+
+.h-auto {
+  height: auto;
 }
 
 .h-full {
@@ -3897,6 +3921,10 @@ html {
 
 .self-end {
   align-self: flex-end;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .rounded-box {
@@ -4016,6 +4044,10 @@ html {
   background-repeat: no-repeat;
 }
 
+.fill-current {
+  fill: currentColor;
+}
+
 .fill-neutral-50 {
   fill: #fafafa;
 }
@@ -4077,14 +4109,14 @@ html {
   line-height: 2.5rem;
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-black {
@@ -4102,10 +4134,6 @@ html {
 .text-base-content {
   --tw-text-opacity: 1;
   color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity)));
-}
-
-.text-current {
-  color: currentColor;
 }
 
 .text-info {
@@ -4339,6 +4367,51 @@ html {
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
   font-size: clamp(1rem, -0.5rem + 8vw, 6rem);
+}
+
+.heart {
+  animation-name: radiate;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  animation-fill-mode: backwards;
+}
+
+.heart:nth-child(1) {
+  animation-delay: -5s;
+}
+
+.heart:nth-child(2) {
+  animation-delay: -10s;
+}
+
+.heart:nth-child(3) {
+  animation-delay: -15s;
+}
+
+.heart:nth-child(4) {
+  animation-delay: -20s;
+}
+
+.heart:nth-child(5) {
+  animation-delay: -25s;
+}
+
+@keyframes radiate {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  1% {
+    opacity: 0.15;
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(2);
+  }
 }
 
 @media (min-width: 640px) {
