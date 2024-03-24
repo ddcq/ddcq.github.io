@@ -3857,10 +3857,6 @@ html {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.scroll-m-28 {
-  scroll-margin: 7rem;
-}
-
 .list-disc {
   list-style-type: disc;
 }
@@ -4008,14 +4004,6 @@ html {
   background-size: cover;
 }
 
-.bg-contain {
-  background-size: contain;
-}
-
-.\!bg-contain {
-  background-size: contain !important;
-}
-
 .bg-fixed {
   background-attachment: fixed;
 }
@@ -4056,38 +4044,6 @@ html {
   padding-bottom: 1.5rem;
 }
 
-.py-vw-2-min\@sm-max\@xl {
-  padding-top: clamp(
-                0.25rem, 0.625vw, 0.5rem
-              );
-  padding-bottom: clamp(
-                0.25rem, 0.625vw, 0.5rem
-              );
-}
-
-.py-vw-8-min\@sm-max\@xl {
-  padding-top: clamp(
-                1rem, 2.5vw, 2rem
-              );
-  padding-bottom: clamp(
-                1rem, 2.5vw, 2rem
-              );
-}
-
-.py-vw-8-min\@md-max\@xl {
-  padding-top: clamp(
-                1.2rem, 2.5vw, 2rem
-              );
-  padding-bottom: clamp(
-                1.2rem, 2.5vw, 2rem
-              );
-}
-
-.py-vw-2-min\@lg {
-  padding-top: max(0.625vw, 0.4rem);
-  padding-bottom: max(0.625vw, 0.4rem);
-}
-
 .pl-vw-20-min\@md-max\@2xl {
   padding-left: clamp(
                 3rem, 6.25vw, 6rem
@@ -4126,6 +4082,11 @@ html {
   line-height: 1.25rem;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .font-black {
   font-weight: 900;
 }
@@ -4141,6 +4102,10 @@ html {
 .text-base-content {
   --tw-text-opacity: 1;
   color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity)));
+}
+
+.text-current {
+  color: currentColor;
 }
 
 .text-info {
@@ -4166,11 +4131,6 @@ html {
 .text-secondary-content {
   --tw-text-opacity: 1;
   color: var(--fallback-sc,oklch(var(--sc)/var(--tw-text-opacity)));
-}
-
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .opacity-0 {

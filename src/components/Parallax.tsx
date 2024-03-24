@@ -23,7 +23,7 @@ export function Banner({ children, image }: PropsWithChildren<{ image: string }>
     <ParallaxBanner className="h-screen">
       <ParallaxBannerLayer image={image} />
       <div className="absolute inset-0 flex items-center">
-        <h1 className="fluid-8xl text-white font-thin w-screen bg-base-200/50 text-center">{children}</h1>
+        <h1 className="fluid-8xl text-base font-thin w-screen bg-base-200/50 text-center">{children}</h1>
       </div>
     </ParallaxBanner>
   )
