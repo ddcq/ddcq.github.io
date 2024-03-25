@@ -3735,6 +3735,10 @@ html {
   top: 0px;
 }
 
+.-z-0 {
+  z-index: 0;
+}
+
 .z-20 {
   z-index: 20;
 }
@@ -3749,18 +3753,6 @@ html {
 
 .z-\[1\] {
   z-index: 1;
-}
-
-.-z-0 {
-  z-index: 0;
-}
-
-.z-0 {
-  z-index: 0;
-}
-
-.z-10 {
-  z-index: 10;
 }
 
 .m-1 {
@@ -4225,6 +4217,22 @@ html {
 
 .ease-out {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.fluid-base {
+  font-size: 1rem;
+  line-height: var(--fluid-line-height);
+  letter-spacing: var(--fluid-letter-spacing);
+  --fluid-line-height: 1.4;
+  --fluid-letter-spacing: 0.5px;
+}
+
+.fluid-lg {
+  font-size: clamp(1.2000rem, calc(0.1330vw + 1.1734rem), 1.3330rem);
+  letter-spacing: var(--fluid-letter-spacing);
+  --fluid-line-height: 1.35;
+  --fluid-letter-spacing: 0.009375em;
+  line-height: var(--fluid-line-height);
 }
 
 .fluid-xl {

@@ -3,7 +3,19 @@ import { Parallax, ParallaxBanner, ParallaxBannerLayer } from 'react-scroll-para
 import cx from '@/utils/classnames'
 
 export function Image({ url }: { url: string }) {
-  return <ParallaxBanner layers={[{ image: url, speed: -50, expanded: false }]} className="h-screen" />
+  return (
+    <ParallaxBanner
+      layers={[
+        {
+          image: url,
+          speed: -50,
+          expanded: false,
+          scale: [0.9, 1.4],
+        },
+      ]}
+      className="h-screen"
+    />
+  )
 }
 
 export function Text({ children, title, className }: PropsWithChildren<{ title?: string; className?: string }>) {
