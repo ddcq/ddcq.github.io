@@ -4219,14 +4219,6 @@ html {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
-.fluid-base {
-  font-size: 1rem;
-  line-height: var(--fluid-line-height);
-  letter-spacing: var(--fluid-letter-spacing);
-  --fluid-line-height: 1.4;
-  --fluid-letter-spacing: 0.5px;
-}
-
 .fluid-lg {
   font-size: clamp(1.2000rem, calc(0.1330vw + 1.1734rem), 1.3330rem);
   letter-spacing: var(--fluid-letter-spacing);

@@ -11,7 +11,7 @@ export default function EveniumNet() {
       <Breadcrumbs breadcrumbs="Evenium|Net" />
       <Banner image="/img/ev/e.jpg">Evenium Net</Banner>
       <Text>
-        <h3 className="fluid-4xl text-center">"Gestionnaire d’invitation et d’inscription des participants</h3>
+        <h3 className="fluid-4xl text-center">Gestionnaire d’invitation et d’inscription des participants</h3>
         <p className="fluid-3xl text-center">Développeur Fullstack JEE/Javascript</p>
       </Text>
       <Image url="/img/ev/a.jpg" />

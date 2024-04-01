@@ -13,8 +13,10 @@ export function Image({ url }: { url: string }) {
           scale: [0.9, 1.4],
         },
       ]}
-      className="h-screen"
-    />
+      className="min-h-screen"
+    >
+      <img src={url} className="w-full h-full" />
+    </ParallaxBanner>
   )
 }
 
