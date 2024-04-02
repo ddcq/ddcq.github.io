@@ -2,38 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.parallax-group {
-    @apply h-screen overflow-hidden overflow-y-auto;
-  perspective: 3px;
-}
-
-.parallax-section {
-    @apply bg-cover relative flex items-center;
-}
-.parallax-image {
-    @apply bg-center bg-cover;
-  background-position: center center;
-  transform: translateZ(-1px) scale(1.5);
-  /* Keep the image from overlapping sibling elements. */
-  z-index: -2;
-  height: 100vh;
-}
-.parallax-article {
-  @apply flex-col bg-base-200/95 space-y-4 content-center !grid md:p-24 shadow-2xl;
-}
-.parallax-article:not(:last-of-type) {
-  height: 50vh;
-}
-.parallax-heading {
-  z-index: -1;
-  transform: translateY(-50vh) translateZ(1px) scale(1.5);
-}
-
-.parallax-title {
-  @apply font-bold text-center text-slate-100 backdrop-blur-sm bg-secondary/30;
-  font-size: clamp(1rem, -0.5rem + 8vw, 6rem);
-}
-
 .heart {
   animation-name: radiate;
   animation-duration: 25s;

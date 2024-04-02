@@ -10,7 +10,7 @@ export function Image({ url }: { url: string }) {
           image: url,
           speed: -50,
           expanded: false,
-          scale: [0.9, 1.4],
+          scale: [0.9, 1.6],
         },
       ]}
       className="min-h-screen"

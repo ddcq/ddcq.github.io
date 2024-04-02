@@ -12,11 +12,11 @@ export default function TexaITex() {
       <Banner image="/img/expertassurance.jpg">iTex</Banner>
       <Text>
         <h3 className="fluid-4xl text-center">Gestionnaire de sinistres et de prestation d'expertise</h3>
-        <p className="fluid-3xl text-center">Developpeur Fullstack JEE/AngularJS | Technical Leader (Janvier 2016)</p>
+        <p className="fluid-3xl text-center">Développeur Fullstack JEE/AngularJS | Technical Leader (Janvier 2016)</p>
       </Text>
       <Image url="/img/te/a.jpeg" />
       <Text title="Tâches">
-        <ul>
+        <ul className="list-disc">
           <li>Evaluation technique des candidats lors des entretiens.</li>
           <li>Animation de dojos, rétrospectives et points techniques.</li>
           <li>Formation et soutien technique des nouveaux arrivants</li>
@@ -28,7 +28,7 @@ export default function TexaITex() {
       </Text>
       <Image url="/img/te/b.jpeg" />
       <Text title="Technologies">
-        <ul>
+        <ul className="list-disc">
           <li>Angular JS 1.4</li>
           <li>Java 7</li>
           <li>JBoss 6</li>
@@ -42,7 +42,7 @@ export default function TexaITex() {
       </Text>
       <Image url="/img/te/c.jpeg" />
       <Text title="&Eacute;quipe">
-        <ul>
+        <ul className="list-disc">
           <li>Un chef de projet</li>
           <li>Un architecte</li>
           <li>Six développeurs</li>
@@ -54,7 +54,7 @@ export default function TexaITex() {
       <Text>
         <ul className="list-inline item-details">
           <li>
-            Date: <strong>Janvier 2014 - Aujourd'hui</strong>
+            Date: <strong>Janvier 2014 - Février 2017</strong>
           </li>
         </ul>
       </Text>
@@ -63,11 +63,11 @@ export default function TexaITex() {
 
       <Text>
         <h3 className="fluid-4xl text-center">Logiciel d'expertise sur site</h3>
-        <p className="fluid-3xl text-center">Developpeur Fullstack JavaScript | Technical Leader</p>
+        <p className="fluid-3xl text-center">Développeur Fullstack JavaScript | Technical Leader</p>
       </Text>
       <Image url="/img/te/f.jpeg" />
       <Text title="Tâches">
-        <ul>
+        <ul className="list-disc">
           <li>Cadrage technique</li>
           <li>Implémentation des User Stories</li>
           <li>Revues de code</li>
@@ -80,7 +80,7 @@ export default function TexaITex() {
       </Text>
       <Image url="/img/te/g.webp" />
       <Text title="Technologies">
-        <ul>
+        <ul className="list-disc">
           <li>Angular 2</li>
           <li>Node JS</li>
           <li>NoSQL</li>
@@ -90,14 +90,14 @@ export default function TexaITex() {
       </Text>
       <Image url="/img/te/h.jpeg" />
       <Text title="&Eacute;quipe">
-        <ul>
+        <ul className="list-disc">
           <li>3 développeurs</li>
           <li>1 chef de projet</li>
           <li>1 MOA</li>
         </ul>
       </Text>
       <Image url="/img/te/i.jpeg" />
-      <Text title="Tâches">
+      <Text>
         <ul className="list-inline item-details">
           <li>
             Client : <strong>Texa Service</strong>
