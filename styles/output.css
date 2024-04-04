@@ -3239,6 +3239,10 @@ html {
   margin-left: min(3.75vw, 1.8rem);
 }
 
+.ml-vw-12-max\@lg {
+  margin-left: min(3.75vw, 2.4rem);
+}
+
 .flex {
   display: flex;
 }

@@ -16,17 +16,14 @@ export default function CreditAgricoleAlphee() {
       </Text>
       <Image url="/img/ca/keys2.jpg" />
       <Text title="Description">
-        <p>
-          Alphée est une plateforme logicielle web innovante conçue pour faciliter l’accès à une gamme complète d’applications financières. Elle offre un point
-          d’accès unique à l’ensemble des outils intégrées pour la simulation de crédits, la gestion de portefeuilles de prêts et l’analyse financière,
-          permettant ainsi à ces applications financières de communiquer entre elles et de déleguer les besoins tels que l’authentification, le partage
-          d’informations ou de documents. Alphée est donc un point central pour l’utilisateur et les différentes applications liées au crédit.
-        </p>
-        <p>Alphée est également le nom du fleuve du Péloponnèse qu’Héraclèse détourna pour nettoyer les écuries d’Augias dans la mythologie grecque.</p>
+        Alphée est une plateforme logicielle web innovante conçue pour faciliter l’accès à une gamme complète d’applications financières. Elle offre un point
+        d’accès unique à l’ensemble des outils intégrées pour la simulation de crédits, la gestion de portefeuilles de prêts et l’analyse financière, permettant
+        ainsi à ces applications financières de communiquer entre elles et de déleguer les besoins tels que l’authentification, le partage d’informations ou de
+        documents. Alphée est donc un point central pour l’utilisateur et les différentes applications liées au crédit.
       </Text>
       <Image url="/img/ca/travaux.jpeg" />
       <Text title="Tâches">
-        <ul>
+        <ul className="list-disc ml-vw-12-max@lg">
           <li>Développement et Intégration de modules techniques devant respecter la norme nationale (Java/Eclipse)</li>
           <li>Automatisation d’installation de serveurs supplémentaires (Script DOS)</li>
           <li>Modification de l’architecture : externalisation des services d’édition, dématérialisation et d’interfaçage Mainframe (Bdoc, MQ, SQL Server)</li>
@@ -38,7 +35,7 @@ export default function CreditAgricoleAlphee() {
       </Text>
       <Image url="/img/ca/ca.jpg" />
       <Text title="Technologies">
-        <ul>
+        <ul className="list-disc ml-vw-12-max@lg">
           <li>Java</li>
           <li>Spring</li>
           <li>Eclipse</li>
@@ -50,7 +47,7 @@ export default function CreditAgricoleAlphee() {
       </Text>
       <Image url="/img/ca/labyrinth.jpg" />
       <Text title="&Eacute;quipe">
-        <ul>
+        <ul className="list-disc ml-vw-12-max@lg">
           <li>Un intégrateur</li>
           <li>2 Developpeurs</li>
         </ul>
@@ -62,20 +59,20 @@ export default function CreditAgricoleAlphee() {
       </Text>
       <Image url="/img/ca/rack.jpg" />
       <Text>
-        <h3>Tâches</h3>
-        <ul>
+        <h3 className="fluid-3xl">Tâches</h3>
+        <ul className="list-disc ml-vw-12-max@lg">
           <li>Normalisation d’une installation urbanisée des middlewares Apache/PHP/Tomcat/Java</li>
           <li>Procédures de déploiement sous Windows et Linux</li>
         </ul>
-        <h3>Technologies</h3>
-        <ul>
+        <h3 className="fluid-3xl">Technologies</h3>
+        <ul className="list-disc ml-vw-12-max@lg">
           <li>Script DOS</li>
           <li>Script bash</li>
         </ul>
       </Text>
       <Image url="/img/ca/virtualization.jpg" />
       <Text>
-        <h3>&Eacute;quipe</h3>
+        <h3 className="fluid-3xl">&Eacute;quipe</h3>
         <ul>
           <li>Un Développeur</li>
         </ul>
