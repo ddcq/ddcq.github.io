@@ -3239,6 +3239,26 @@ html {
   margin-top: 0.75rem;
 }
 
+.mt-vw-36 {
+  margin-top: 11.25vw;
+}
+
+.mt-vw-64 {
+  margin-top: 20vw;
+}
+
+.-mt-vw-72 {
+  margin-top: -22.5vw;
+}
+
+.mt-vw-72 {
+  margin-top: 22.5vw;
+}
+
+.mt-vw-7 {
+  margin-top: 2.1875vw;
+}
+
 .flex {
   display: flex;
 }
@@ -3303,18 +3323,6 @@ html {
   width: 100vw;
 }
 
-.min-w-vw-96-min\@xl {
-  min-width: max(30vw, 24rem);
-}
-
-.min-w-vw-96 {
-  min-width: 30vw;
-}
-
-.min-w-96 {
-  min-width: 24rem;
-}
-
 .min-w-vw-96-min\@sm-max\@2xl {
   min-width: clamp(
                 12rem, 30vw, 28.8rem
@@ -3374,6 +3382,10 @@ html {
   justify-content: space-around;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .gap-8 {
   gap: 2rem;
 }
@@ -3382,6 +3394,22 @@ html {
   gap: clamp(
                 0.5rem, 1.25vw, 0.8rem
               );
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.gap-64 {
+  gap: 16rem;
+}
+
+.gap-36 {
+  gap: 9rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
 }
 
 .self-end {
@@ -3626,8 +3654,34 @@ html {
   color: var(--fallback-sc,oklch(var(--sc)/var(--tw-text-opacity)));
 }
 
+.text-slate-50 {
+  --tw-text-opacity: 1;
+  color: rgb(248 250 252 / var(--tw-text-opacity));
+}
+
+.text-red-900 {
+  --tw-text-opacity: 1;
+  color: rgb(127 29 29 / var(--tw-text-opacity));
+}
+
 .opacity-0 {
   opacity: 0;
+}
+
+.opacity-100 {
+  opacity: 1;
+}
+
+.opacity-20 {
+  opacity: 0.2;
+}
+
+.opacity-40 {
+  opacity: 0.4;
+}
+
+.opacity-60 {
+  opacity: 0.6;
 }
 
 .opacity-80 {
@@ -3636,6 +3690,14 @@ html {
 
 .opacity-90 {
   opacity: 0.9;
+}
+
+.opacity-10 {
+  opacity: 0.1;
+}
+
+.opacity-5 {
+  opacity: 0.05;
 }
 
 .shadow {
@@ -3686,6 +3748,14 @@ html {
 
 .duration-500 {
   transition-duration: 500ms;
+}
+
+.duration-700 {
+  transition-duration: 700ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ease-out {
@@ -4040,10 +4110,6 @@ html {
     display: none;
   }
 
-  .sm\:h-full {
-    height: 100%;
-  }
-
   .sm\:p-24 {
     padding: 6rem;
   }
@@ -4080,4 +4146,14 @@ html {
 .\[\&\>li\]\:py-vw-2>li {
   padding-top: 0.625vw;
   padding-bottom: 0.625vw;
+}
+
+.\[\&\>p\]\:transition-opacity>p {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.\[\&\>p\]\:duration-700>p {
+  transition-duration: 700ms;
 }
