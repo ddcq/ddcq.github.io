@@ -1,93 +1,69 @@
 'use client'
 
+import { useEffect } from 'react'
 import { useInterval } from 'usehooks-ts'
-const NUMBER_CLASSES = 'flex flex-col duration-700 [&>p]:transition-opacity [&>p]:duration-700'
-
+const NUMBER_CLASSES = 'flex flex-col duration-700 [&>p]:transition-opacity [&>p]:duration-700 h-full'
 const opacityGradient = ['opacity-100', 'opacity-60', 'opacity-40', 'opacity-20', 'opacity-10']
-export default function Clock() {
-  useInterval(() => {
-    const d = new Date()
-    const parent = document.getElementById('clock')
-    const delta = Math.floor(parent.clientHeight / 10)
-    function shift(col, val, nbvalues) {
-      const element = parent.children.item(col) as HTMLDivElement
-      element.style.transform = `translateY(-${delta * (val % nbvalues)}px)`
-      const numbers = element.children
-      for (let index = 0; index < numbers.length; index++) {
-        const color = opacityGradient[Math.abs(index - val)]
-        numbers.item(index).className = color || 'opacity-5'
-      }
-    }
-    shift(0, Math.floor(d.getHours() / 10), 3)
-    shift(1, d.getHours() % 10, 10)
-    shift(3, Math.floor(d.getMinutes() / 10), 6)
-    shift(4, d.getMinutes() % 10, 10)
-    shift(6, Math.floor(d.getSeconds() / 10), 6)
-    shift(7, d.getSeconds() % 10, 10)
-  }, 1000)
+
+function times(length: number) {
   return (
-    <div className="w-screen h-screen flex items-center justify-center">
+    <div className={NUMBER_CLASSES}>
+      {Array.from({ length }, (_v, n) => (
+        <p key={n}>{n}</p>
+      ))}
+    </div>
+  )
+}
+
+export default function Clock() {
+  useEffect(() => shiftAllNumbers(true))
+  useInterval(shiftAllNumbers, 1000)
+  return (
+    <div className="w-screen h-screen flex items-center justify-center transform">
       <div id="clock" className="flex gap-2 text-center fluid-3xl text-slate-50 mt-vw-72">
-        <div className={NUMBER_CLASSES}>
-          <p>0</p>
-          <p>1</p>
-          <p>2</p>
-        </div>
-        <div className={NUMBER_CLASSES}>
-          <p>0</p>
-          <p>1</p>
-          <p>2</p>
-          <p>3</p>
-          <p>4</p>
-          <p>5</p>
-          <p>6</p>
-          <p>7</p>
-          <p>8</p>
-          <p>9</p>
-        </div>
+        {times(3)}
+        {times(10)}
         <div>:</div>
-        <div className={NUMBER_CLASSES}>
-          <p>0</p>
-          <p>1</p>
-          <p>2</p>
-          <p>3</p>
-          <p>4</p>
-          <p>5</p>
-        </div>
-        <div className={NUMBER_CLASSES}>
-          <p>0</p>
-          <p>1</p>
-          <p>2</p>
-          <p>3</p>
-          <p>4</p>
-          <p>5</p>
-          <p>6</p>
-          <p>7</p>
-          <p>8</p>
-          <p>9</p>
-        </div>
+        {times(6)}
+        {times(10)}
         <div>:</div>
-        <div className={NUMBER_CLASSES}>
-          <p>0</p>
-          <p>1</p>
-          <p>2</p>
-          <p>3</p>
-          <p>4</p>
-          <p>5</p>
-        </div>
-        <div className={NUMBER_CLASSES}>
-          <p>0</p>
-          <p>1</p>
-          <p>2</p>
-          <p>3</p>
-          <p>4</p>
-          <p>5</p>
-          <p>6</p>
-          <p>7</p>
-          <p>8</p>
-          <p>9</p>
-        </div>
+        {times(6)}
+        {times(10)}
       </div>
     </div>
   )
+}
+
+function shiftAllNumbers(firstLoad?: boolean): void {
+  const d = new Date()
+  const parent = document.getElementById('clock')
+  const delta = Math.floor(parent.clientHeight / 10) * 1.01
+  function shift([col, val]: [number, number]) {
+    const element = parent.children.item(col) as HTMLDivElement
+    element.style.transform = `translateY(-${delta * val}px)`
+    const numbers = element.children
+    for (let index = 0; index < numbers.length; index++) {
+      const color = opacityGradient[Math.abs(index - val)]
+      numbers.item(index).className = color || 'opacity-5'
+    }
+  }
+  const seconds = d.getSeconds()
+  const minutes = d.getMinutes()
+  const hours = d.getHours()
+  const args: [number, number][] = [
+    [7, seconds % 10],
+    [6, ~~(seconds / 10)],
+    [4, minutes % 10],
+    [3, ~~(minutes / 10)],
+    [1, hours % 10],
+    [0, ~~(hours / 10)],
+  ]
+  if (firstLoad) {
+    args.forEach(shift)
+    return
+  }
+  for (const decimal of args) {
+    shift(decimal)
+    if (decimal[1]) break
+  }
 }
