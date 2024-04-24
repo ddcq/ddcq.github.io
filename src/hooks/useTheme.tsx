@@ -11,5 +11,5 @@ export function useTheme() {
     el.setAttribute('data-theme', savedTheme);
     el.setAttribute('color-scheme', daisyThemes[savedTheme]['color-scheme']);
   }, [savedTheme]);
-  return [savedTheme, saveTheme];
+  return [savedTheme, saveTheme] as const;
 }
