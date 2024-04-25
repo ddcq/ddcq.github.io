@@ -1,5 +1,6 @@
 'use client'
 
+import { useTheme } from '@/hooks/useTheme'
 import { useEffect } from 'react'
 import { useInterval } from 'usehooks-ts'
 const NUMBER_CLASSES = 'flex flex-col duration-700 [&>p]:transition-opacity [&>p]:duration-700 h-full'
@@ -16,11 +17,12 @@ function times(length: number) {
 }
 
 export default function Clock() {
+  useTheme()
   useEffect(() => shiftAllNumbers(true))
   useInterval(shiftAllNumbers, 1000)
   return (
     <div className="w-screen h-screen flex items-center justify-center transform">
-      <div id="clock" className="flex gap-2 text-center fluid-3xl text-slate-50 mt-vw-72">
+      <div id="clock" className="flex gap-2 text-center fluid-3xl mt-vw-72">
         {times(3)}
         {times(10)}
         <div>:</div>
