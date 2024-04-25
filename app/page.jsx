@@ -9,8 +9,10 @@ import Society from '../src/sections/Society'
 import Education from '../src/sections/Education'
 import Hearts from '@/components/Hearts'
 import { useReadLocalStorage } from 'usehooks-ts'
+import { useTheme } from '@/hooks/useTheme'
 
 export default function Home() {
+  useTheme()
   const theme = useReadLocalStorage('theme');
   return (
     <>
