@@ -1,3 +1,4 @@
+'use client'
 import { Icon } from '@/components/Icon'
 import PaintSvg from './assets/paint.svg'
 import ClockSvg from './assets/clock.svg'
