@@ -1,8 +1,8 @@
 'use client'
 import { Icon } from '@/components/Icon'
-import PaintSvg from './assets/paint.svg'
-import ClockSvg from './assets/clock.svg'
 import { ReactNode } from 'react'
+import ClockSvg from './Clock'
+import PaintSvg from './Paint'
 export default function Header() {
   return (
     <header className="sticky top-0 bg-transparent z-50 navbar">
