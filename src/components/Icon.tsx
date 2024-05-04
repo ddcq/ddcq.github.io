@@ -7,22 +7,18 @@ export interface IconProps extends ComponentPropsWithoutRef<'svg'> {
   children: ReactNode
 }
 
-export const Icon = ({
-  className,
-  children,
-  ...others
-}: IconProps) => {
+export function Icon({
+  className, children, ...others
+}: IconProps) {
   const child = Children.only(children)
-
+  console.log(child)
   return (
-    <>
-      {cloneElement(child as React.ReactElement, {
-        className,
-        'aria-hidden': 'true',
-        focusable: 'false',
-        ...others,
-      })}
-    </>
+    cloneElement(child as React.ReactElement, {
+      className,
+      'aria-hidden': 'true',
+      focusable: 'false',
+      ...others,
+    })
   )
 }
 
