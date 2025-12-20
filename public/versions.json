@@ -1,4 +1,5 @@
 {
+  "/music/audhumla.mp3": "v1",
   "/music/baldr.mp3": "v1",
   "/music/bifrost.mp3": "v1",
   "/music/bragi.mp3": "v1",
@@ -35,9 +36,11 @@
   "/music/yggdrasil.mp3": "v1",
   "/music/ymir.mp3": "v1",
   "/video/audhumla_chibi.mp4": "v1",
+  "/video/audhumla_epic.mp4": "v1",
   "/video/audhumla_premium.mp4": "v1",
   "/video/baldr_chibi.mp4": "v3",
   "/video/baldr_epic.mp4": "v1",
+  "/video/baldr_premium.mp4": "v1",
   "/video/bifrost_chibi.mp4": "v1",
   "/video/bifrost_epic.mp4": "v1",
   "/video/bifrost_premium.mp4": "v1",
@@ -101,6 +104,7 @@
   "/video/njord_epic.mp4": "v1",
   "/video/njord_premium.mp4": "v1",
   "/video/odin_chibi.mp4": "v1",
+  "/video/odin_epic.mp4": "v1",
   "/video/odin_premium.mp4": "v1",
   "/video/sif_chibi.mp4": "v1",
   "/video/sif_epic.mp4": "v1",
@@ -109,7 +113,7 @@
   "/video/skadi_epic.mp4": "v1",
   "/video/skadi_premium.mp4": "v1",
   "/video/sleipnir_chibi.mp4": "v1",
-  "/video/sleipnir_epic.mp4": "v1"
+  "/video/sleipnir_epic.mp4": "v1",
   "/video/sleipnir_premium.mp4": "v1",
   "/video/svadilfari_chibi.mp4": "v1",
   "/video/svadilfari_epic.mp4": "v1",
@@ -124,5 +128,6 @@
   "/video/yggdrasil_chibi.mp4": "v1",
   "/video/yggdrasil_premium.mp4": "v1",
   "/video/ymir_chibi.mp4": "v1",
-  "/video/ymir_premium.mp4": "v1",
+  "/video/ymir_epic.mp4": "v1",
+  "/video/ymir_premium.mp4": "v1"
 }
