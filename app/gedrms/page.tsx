@@ -55,7 +55,7 @@ export default function GeneralElectricDRMS() {
       <Image url="/img/ge/d.jpg" />
       <Text title="&Eacute;quipe">
         <ul>
-          <li>3 deloppeurs</li>
+          <li>3 développeurs</li>
           <li>1 chef de projet</li>
           <li>4 MOA</li>
         </ul>

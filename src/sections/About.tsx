@@ -2,72 +2,75 @@ export default function About() {
   return (
     <section className="sm:p-24 flex flex-col gap-8 w-full" id="about">
       <div data-aos="fade-right" className="w-full card glass shadow-xl sm:card-side">
-      <figure className="min-w-vw-96-min@sm-max@2xl">
-          <img src="img/ia/c.webp" className="h-full" />
+        <figure className="min-w-vw-96-min@sm-max@2xl">
+          <img src="img/ia/c.webp" alt="Illustration développement" className="h-full" />
         </figure>
         <div className="card-body">
-          Fort de plus de 20 ans d’expérience dans le domaine des technologies de l’Internet, j’ai eu l’opportunité unique de témoigner et de m’adapter à
-          l’émergence et à la progression constante de nouvelles technologies. Cette longue expérience m’a permis de développer une expertise approfondie et une
-          compréhension particulière des systèmes complexes. Dès mes débuts, j’ai cultivé une approche rigoureuse en matière de programmation, veillant à
-          produire un code non seulement clair et lisible, optimisé pour une consommation réduite des resources et également répondant précisément aux besoins
-          fonctionnelles avec comme principal objectif, la meilleure expérience utilisateur possible. Cette philosophie, alliant clarté, efficacité et
-          adaptabilité, continue de guider mon travail et mes contributions au sein de l’industrie du numérique.
+          <h2 className="card-title text-2xl">Expertise technique</h2>
+          <p className="mb-4">
+            <strong>Plus de 24 ans d'expérience</strong> dans le développement web, marqués par une adaptation constante aux évolutions technologiques.
+          </p>
+          <ul className="space-y-2 list-disc list-inside">
+            <li>Code clair, lisible et optimisé pour la performance</li>
+            <li>Architecture orientée vers l'expérience utilisateur</li>
+            <li>Expertise des systèmes complexes et legacy</li>
+            <li>Migration vers des technologies modernes (React, TypeScript, microservices)</li>
+          </ul>
         </div>
       </div>
       <div data-aos="fade-left" className="self-end w-full card sm:card-side glass shadow-xl">
-      <figure className="min-w-vw-96-min@sm-max@2xl">
-          <img src="img/ia/b.webp" className="h-full" />
+        <figure className="min-w-vw-96-min@sm-max@2xl">
+          <img src="img/ia/b.webp" alt="Illustration collaboration" className="h-full" />
         </figure>
         <div className="card-body">
-          J’ai toujours piloté ma carrière avec la ferme conviction que l’ouverture aux idées des autres est la clé du progrès et de l’innovation. Cette
-          philosophie m’a permis de tisser des liens solides avec mes collègues et de collaborer efficacement, en particulier avec l’équipe Mainframe, qui est
-          souvent le pilier technologique dans de nombreuses entreprises. En travaillant main dans la main avec ces experts, j’ai pu non seulement approfondir
-          ma compréhension des systèmes centraux, mais aussi contribuer à des projets transversaux qui ont renforcé l’intégration des technologies modernes avec
-          les systèmes existants. Cette synergie a permis de créer des solutions robustes et évolutives, assurant ainsi la pérennité et la compétitivité de
-          notre entreprise dans un marché en constante évolution.
+          <h2 className="card-title text-2xl">Collaboration & Leadership</h2>
+          <ul className="space-y-2 list-disc list-inside">
+            <li><strong>Travail d'équipe</strong> : collaboration étroite avec les équipes techniques (Mainframe, DevOps, Product)</li>
+            <li><strong>Intégration</strong> : connexion réussie entre technologies modernes et systèmes legacy</li>
+            <li><strong>Mentoring</strong> : accompagnement des développeurs juniors et partage de connaissances</li>
+            <li><strong>Vision transversale</strong> : solutions robustes et évolutives pour la pérennité des projets</li>
+          </ul>
         </div>
       </div>
       <div data-aos="fade-right" className="card xl:card-side glass shadow-xl self-end max-h-3xl">
         <figure className="min-w-vw-96-min@sm-max@2xl">
-          <img src="img/ia/a.webp" className="md:h-full w-full" />
+          <img src="img/ia/a.webp" alt="Illustration optimisation" className="md:h-full w-full" />
         </figure>
         <div className="card-body">
-          Je me suis consciencieusement attelé à l’optimisation de mes requêtes SQL, en mettant en œuvre des techniques avancées telles que l’indexation
-          judicieuse et la réécriture de requêtes pour minimiser la charge sur le serveur d’application. Cette démarche proactive a non seulement allégé la
-          charge de travail du serveur, mais a également entraîné une réduction significative du temps de réponse, améliorant ainsi l’expérience utilisateur.
-          Parallèlement, j’ai pris l’initiative de plonger au cœur des opérations de production pour identifier et comprendre les défis réels auxquels elle est
-          confrontée. En collaborant étroitement avec l’équipe de production, j’ai pu mettre en lumière des problématiques critiques et proposer des solutions
-          concrètes qui ont contribué à améliorer la fiabilité et l’efficacité de nos processus opérationnels.
+          <h2 className="card-title text-2xl">Performance & Optimisation</h2>
+          <ul className="space-y-2 list-disc list-inside">
+            <li><strong>Optimisation SQL</strong> : indexation avancée, réécriture de requêtes, réduction des temps de réponse</li>
+            <li><strong>Architecture</strong> : allègement de la charge serveur, amélioration de la scalabilité</li>
+            <li><strong>Production</strong> : identification proactive des problématiques critiques</li>
+            <li><strong>Fiabilité</strong> : solutions concrètes pour améliorer les processus opérationnels</li>
+          </ul>
         </div>
       </div>
       <div data-aos="zoom-in-left" className="card md:card-side glass shadow-xl self-end max-h-3xl">
         <figure className="">
-          <img src="img/ia/d.webp" className="md:h-full" />
+          <img src="img/ia/d.webp" alt="Illustration vision" className="md:h-full" />
         </figure>
         <div className="card-body">
-          <h2 className="card-title fluid-3xl">Ma vision</h2>
-          <p>
-            Un développeur doit être en mesure d’évaluer son travail. Pour se focaliser efficacement sur des codes hautement stratégiques, il est crucial de
-            minimiser le temps et l’énergie consacrés aux tâches monotones et récurrentes. C’est dans cette optique que les environnements de développement
-            intégrés (IDE) évoluent et que les concepts de DevOps et d’agilité ont été créés.
+          <h2 className="card-title text-2xl mb-4">Ma vision du développement</h2>
+
+          <h3 className="font-bold text-lg mb-2">📊 Pragmatisme technologique</h3>
+          <p className="mb-4">
+            Les technologies (Docker, microservices, NoSQL, Big Data) sont des <strong>outils au service de l'utilisateur</strong>. L'adoption d'une nouvelle technologie doit être motivée par un besoin réel, pas par l'effet de mode.
           </p>
-          <p>
-            Docker, les architectures micro-services, les bases de données NoSQL et le Big Data sont des technologies impressionnantes. Cependant, elles ne sont
-            que des instruments destinés à enrichir l’expérience des utilisateurs. L’adoption d’un nouveau framework devrait uniquement être motivée par le
-            besoin de répondre à un défi spécifique, ce qui, en définitive, bénéficiera à la fois aux utilisateurs et à l’équipe dans leur ensemble.
+
+          <h3 className="font-bold text-lg mb-2">⚡ Automatisation & DevOps</h3>
+          <p className="mb-4">
+            Minimiser le temps sur les tâches répétitives pour se concentrer sur le code stratégique. Les IDE modernes, DevOps et CI/CD sont essentiels pour gagner en efficacité.
           </p>
-          <p>
-            L’informatique, caractérisée par son évolution rapide et continue, exige de nous une vigilance constante pour suivre les avancées technologiques. La
-            veille technologique n’est pas seulement une recommandation, c’est une composante essentielle de notre activité professionnelle. Elle nous permet de
-            rester compétitifs et innovants, en anticipant les tendances et en intégrant de nouvelles pratiques qui améliorent notre travail et celui de nos
-            collègues.
+
+          <h3 className="font-bold text-lg mb-2">🎯 Agilité & amélioration continue</h3>
+          <p className="mb-4">
+            <strong>Scrum Master certifié</strong> : fervent défenseur des méthodes agiles. Flexibilité, collaboration et réactivité transforment radicalement la gestion de projets.
           </p>
+
+          <h3 className="font-bold text-lg mb-2">📚 Veille technologique</h3>
           <p>
-            Les approches Agilité et DevOps représentent une véritable révolution dans la manière de gérer les projets informatiques. Elles introduisent des
-            pratiques qui transforment radicalement nos méthodes de travail, favorisant la flexibilité, la collaboration et la réactivité. Une fois que l’on a
-            expérimenté la fluidité des méthodes agiles et l’efficacité de l’amélioration continue, il devient impensable de revenir aux méthodologies
-            traditionnelles rigides et aux cycles de développement en V. Ces nouvelles méthodes nous permettent de mieux répondre aux besoins changeants des
-            clients et d’optimiser la qualité de nos produits de manière constante et mesurable.
+            L'évolution rapide de notre industrie exige une veille constante. Rester compétitif signifie anticiper les tendances et intégrer les meilleures pratiques.
           </p>
         </div>
       </div>
