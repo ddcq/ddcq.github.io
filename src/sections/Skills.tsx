@@ -13,7 +13,7 @@ export default function Skills() {
             <h1>Web programming</h1>
             <div
               className="radial-progress ml-3"
-              style={{ '--value': 100 }}
+              style={{ '--value': 100 } as React.CSSProperties}
               role="progressbar"
             >
               100%
@@ -32,7 +32,7 @@ export default function Skills() {
             <h1>Backend programming</h1>
             <div
               className="radial-progress ml-3"
-              style={{ '--value': 70 }}
+              style={{ '--value': 70 } as React.CSSProperties}
               role="progressbar"
             >
               70%

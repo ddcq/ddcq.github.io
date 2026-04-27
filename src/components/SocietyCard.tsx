@@ -3,7 +3,14 @@
 import cx from '../utils/classnames'
 import { useInView } from 'react-intersection-observer'
 
-export default function SocietyCard({ img, society, group, period }) {
+interface SocietyCardProps {
+  img: string
+  society: string
+  group: string
+  period: string
+}
+
+export default function SocietyCard({ img, society, group, period }: SocietyCardProps) {
   const { inView, ref } = useInView({ triggerOnce: true })
   return (
     <div

@@ -1,5 +1,14 @@
-'use client';
-export default function MissionCard({ img, society, project, description, path }) {
+'use client'
+
+interface MissionCardProps {
+  img: string
+  society: string
+  project: string
+  description: string
+  path?: string
+}
+
+export default function MissionCard({ img, society, project, description, path }: MissionCardProps) {
   return (
     <div className="card w-96 h-96 bg-base-100 shadow-xl m-4 bg-base-300">
       <figure className="h-36">

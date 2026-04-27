@@ -1,6 +1,10 @@
 import { Children } from 'react'
 
-export default function Breadcrumbs({ breadcrumbs }) {
+interface BreadcrumbsProps {
+  breadcrumbs: string
+}
+
+export default function Breadcrumbs({ breadcrumbs }: BreadcrumbsProps) {
   return (
     <div className="navbar sticky top-0 bg-base-100 z-30 justify-between">
       <div className="breadcrumbs">

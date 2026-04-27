@@ -12,9 +12,9 @@ export default function ThemeSelector() {
   return (
     <div className="flex flex-col w-screen gap-vw-10-min@sm-max@2xl p-vw-7">
       {themes.map(([mode, themesByMode]) => [
-        <h1 className="fluid-xl font-black underline">Themes {mode}</h1>,
-        <div className="rounded-box grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 fluid-lg">
-          {themesByMode.map(([id]) => (
+        <h1 key={`title-${mode}`} className="fluid-xl font-black underline">Themes {mode}</h1>,
+        <div key={`grid-${mode}`} className="rounded-box grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 fluid-lg">
+          {themesByMode?.map(([id]) => (
             <div
               key={id}
               data-theme={id}

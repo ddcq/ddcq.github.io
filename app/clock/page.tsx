@@ -38,17 +38,24 @@ export default function Clock() {
 
 function shiftAllNumbers(firstLoad?: boolean): void {
   const d = new Date()
-  const parent = document.getElementById('clock')
-  const delta = Math.floor(parent.clientHeight / 10) * 1.01
+  const parentElement = document.getElementById('clock')
+  if (!parentElement) return
+
+  const delta = Math.floor(parentElement.clientHeight / 10) * 1.01
+
   function shift([col, val]: [number, number]) {
-    const element = parent.children.item(col) as HTMLDivElement
+    const element = parentElement!.children.item(col) as HTMLDivElement
+    if (!element) return
     element.style.transform = `translateY(-${delta * val}px)`
     const numbers = element.children
     for (let index = 0; index < numbers.length; index++) {
+      const numberElement = numbers.item(index)
+      if (!numberElement) continue
       const color = opacityGradient[Math.abs(index - val)]
-      numbers.item(index).className = color || 'opacity-5'
+      numberElement.className = color || 'opacity-5'
     }
   }
+
   const seconds = d.getSeconds()
   const minutes = d.getMinutes()
   const hours = d.getHours()

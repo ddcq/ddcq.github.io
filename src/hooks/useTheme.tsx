@@ -9,7 +9,10 @@ export function useTheme() {
   useEffect(() => {
     const el = document.documentElement;
     el.setAttribute('data-theme', savedTheme);
-    el.setAttribute('color-scheme', daisyThemes[savedTheme]['color-scheme']);
+    const theme = daisyThemes[savedTheme as keyof typeof daisyThemes];
+    if (theme && typeof theme === 'object' && 'color-scheme' in theme) {
+      el.setAttribute('color-scheme', theme['color-scheme'] as string);
+    }
   }, [savedTheme]);
   return [savedTheme, saveTheme] as const;
 }
