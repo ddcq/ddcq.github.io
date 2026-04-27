@@ -8,7 +8,7 @@ export default function Portfolio() {
   return (
     <section id="portfolio">
       <Title>Mes missions</Title>
-      <div className="flex flex-wrap justofy-center">
+      <div className="flex flex-wrap justify-center">
         {projects.map((project) => (
           <MissionCard key={project.slug} {...project} />
         ))}

@@ -17,15 +17,6 @@ export default function Footer() {
           Viadeo
         </a>
       </nav>
-      <nav>
-        <h6 className="footer-title">CV à télécharger</h6>
-        <a className="link link-hover" href="resume/CV - Denis Declercq.docx">
-          Word Docx
-        </a>
-        <a className="link link-hover" href="resume/CV - Denis Declercq - light.docx">
-          Light version
-        </a>
-      </nav>
     </footer>
   )
 }

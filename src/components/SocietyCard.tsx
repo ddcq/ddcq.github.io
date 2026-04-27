@@ -22,7 +22,7 @@ export default function SocietyCard({ img, society, group, period }: SocietyCard
       )}
     >
       <figure>
-        <img src={img} />
+        <img src={img} alt={`Logo de ${society}${group ? ` - ${group}` : ''}`} />
       </figure>
       <div className="card-body">
         <h2 className="card-title text-3xl">{society}</h2>

@@ -39,7 +39,7 @@ export const companies: Company[] = [
   {
     society: 'Leboncoin',
     group: 'Adevinta',
-    period: 'Novembre 2020 - Aujourd\'hui',
+    period: 'Novembre 2020 - Avril 2026',
     img: '/img/leboncoin.jpg',
   },
 ]
