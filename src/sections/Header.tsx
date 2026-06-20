@@ -40,6 +40,7 @@ export default function Header() {
       <div className="navbar-end">
         <IconButton href="/clock" iconSvg={<ClockSvg />} />
         <IconButton href="/theme-selector" iconSvg={<PaintSvg />} />
+        <a href="/tank-3d" className="p-3 m-1 btn rounded-full btn-neutral">Headgames 3D</a>
       </div>
     </header>
   )
